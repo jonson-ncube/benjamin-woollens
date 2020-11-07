@@ -24,7 +24,7 @@ export default function Header() {
             <nav className="header__nav">
                 <div className="header__left">
                     <IconButton>
-                        <FacebookIcon className='facebook' />
+                        <FacebookIcon />
                     </IconButton>
                     <IconButton>
                         <InstagramIcon />

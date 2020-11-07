@@ -1,0 +1,17 @@
+.boxContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home__brands{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
