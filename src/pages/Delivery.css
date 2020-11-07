@@ -1,0 +1,11 @@
+.delivery__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.deliver__copy{
+    width: 80%;
+}

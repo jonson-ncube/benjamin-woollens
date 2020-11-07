@@ -1,0 +1,24 @@
+.abb__container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abb__hero{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.abb__copy{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abb__copy > p{
+    margin-top: -10px;
+}

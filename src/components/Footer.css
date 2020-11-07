@@ -74,3 +74,13 @@ span{
 .footer__copy{
     margin-left: 30px;
 }
+
+.footer__logos{
+    display: flex;
+    align-items: center;
+}
+
+.footer__items{
+    height: 18px;
+    margin-left: 15px;
+}

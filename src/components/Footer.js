@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.css'
 
+import visa from '../assets/visa.png'
+import mastercard from '../assets/mastercard.png'
+import payfast from '../assets/payfast.png'
+
 export default function Footer() {
 
     const navStyle = {
@@ -76,6 +80,12 @@ export default function Footer() {
             <div className="home__copy">
                 <div className="footer__copy">
                     <p>© 2020 Benjamin Woollens.</p>
+                </div>
+                <div className="footer__logos">
+                    <p>We accept:</p>
+                    <img src={visa} alt="Visa-logo" className="footer__items" />
+                    <img src={mastercard} alt="Master-Card-logo" className="footer__items" />
+                    <img src={payfast} alt="Payfast-logo" className="footer__items" />
                 </div>
                 <div className="footer__terms">
                     <a href="./policy">Our Privacy Policy</a>
