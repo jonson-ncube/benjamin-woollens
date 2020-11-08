@@ -225,6 +225,143 @@ export default function AboutFabrics() {
                 <p>A corded fabric, usually made from silk or one of the manufactured fibres, which has a distinctive water-marked wavy pattern on the face of the fabric.</p>
                 <h3>Muslin</h3>
                 <p>An inexpensive, medium weight, plain weave, low count (less than 160 threads per square inch) cotton sheeting fabric. In its unfinished form, it is commonly used in fashion design to make trial garments for preliminary fit.</p>
+                <h2>N</h2>
+                <h3>Nainsook</h3>
+                <p>A lightweight plain weave cotton fabric, usually finished to create a lustre and a soft hand. Common end-uses are infants' wear, blouses, and lingerie. </p>
+                <h3>Nap</h3>
+                <p>A fuzzy, fur-like feel created when fibre ends extend from the basic fabric structure to the fabric surface. The fabric can be napped on either one or both sides.</p>
+                <h3>Neoprene</h3>
+                <p>A lightweight synthetic fabric that resembles rubber. It is resistant to water, oil, heat, and weathering. Often used for swimwear.</p>
+                <h3>Net/Tulle</h3>
+                <p>An open fabric, which is created by connecting the intersections in a woven, knitted, or crocheted construction to form a mesh-like appearance that won't ravel. End-uses include veils, skirts.</p>
+                <h2>O</h2>
+                <h3>Organdy</h3>
+                <p>A stiffened, sheer, lightweight plain weave fabric, with a medium to high yarn count, often made from cotton. End-uses include blouses, dresses, and curtains/draperies.</p>
+                <h3>Organza</h3>
+                <p>A crisp, sheer, lightweight plain weave fabric, with a medium to high yarn count , made of silk, rayon, nylon, or polyester. The fabric is used primarily in evening and wedding apparel for women.</p>
+                <h3>Ottoman</h3>
+                <p>A tightly woven plain weave ribbed fabric with a hard slightly lustred surface. The ribbed effect is created by weaving a finer silk or manufactured warp yarn with a heavier filler yarn, usually made of cotton, wool, or waste yarn. In the construction, the heavier filler yarn is completely covered by the warp yarn, thus creating the ribbed effect. End uses for this fabric include coats, suits, dresses.</p>
+                <h3>Oxford</h3>
+                <p>A fine, soft, lightweight woven cotton or blended with manufactured fibres in a 2 x 1 basket weave variation of the plain weave construction. The fabric is used primarily in shirting’s.</p>
+                <h2>P</h2>
+                <h3>Paisley</h3>
+                <p>A tear-drop shaped, fancy printed pattern, used in dresses, blouses, and men's ties.</p>
+                <h3>Panne Velvet </h3>
+                <p>A type of lustrous, lightweight velvet fabric, usually made of silk or a manufactured fibre, in which the pile has been flattened in one direction.</p>
+                <h3>Peau de Soie</h3>
+                <p>A soft and finish silk fabric of satin weave appearance. It is a French term which literally means "skin of silk". </p>
+                <h3>Pile Weave</h3>
+                <p>A type of decorative weave in which a pile is formed by additional warp or filling yarns interlaced in such a way that loops are formed on the surface or face of the fabric. The loops may be left uncut, or they may be cut to expose yarn ends and produce cut pile fabric.</p>
+                <h3>Pique</h3>
+                <p>A medium-weight fabric, either knit or woven, with raised dobby designs including cords, wales, waffles, or patterns. Woven versions have cords running lengthwise, or in the warp direction. Knitted versions are double-knit fabric constructions, created on multi-feed circular knitting machines.</p>
+                <h3>Plain Weave</h3>
+                <p>A basic weave, utilising a simple alternate interlacing of warp and filling yarns. Any type of yarn made from any type of fibre can be manufactured into a plain weave fabric.</p>
+                <h3>Pleats</h3>
+                <p>A portion of the fabric folded over, and secured by stitching or pressing.</p>
+                <h3>Plissee</h3>
+                <p>A lightweight, plain weave, fabric, made from cotton, rayon, or acetate, and characterised by a puckered striped effect, usually in the warp direction. The crinkled effect is created through the application of a caustic soda solution, which shrinks the fabric in the areas of the fabric where it is applied. Plissee is similar in appearance to seersucker. End-uses include dresses, shirting’s, pyjamas, and bedspreads.</p>
+                <h3>Plaid</h3>
+                <p>A cloth having a crisscross design. The stripes in warp and weft directions cross at intervals to form different colours in square or rectangular patterns. It may be plain or twill weave.</p>
+                <h3>Polyester /Microfibre</h3>
+                <p>A man-made fibre where the forming substance is any synthetic polymer. It has high strength and are resistant to shrinking and stretching. It is also wrinkle resistant.</p>
+                <h3>Polymer</h3>
+                <p>A high molecular weight structure, which makes up the substance from which manufactured fibres are produced. The fibre is created by linking together the chain-like molecular units called monomers.</p>
+                <h3>Pongee</h3>
+                <p>The most common form is a naturally coloured lightweight, plain weave, silk-like fabric with a slubbed effect. End-uses include blouses, dresses, etc.</p>
+                <h3>Poplin</h3>
+                <p>A fabric made using a rib variation of the plain weave. The construction is characterised by having a slight ridge effect in one direction, usually the filling. Poplin used to be associated with casual clothing, but as the "world of work" has become more relaxed, this fabric has developed into a staple of men's wardrobes, being used frequently in casual trousers.</p>
+                <h2>Q</h2>
+                <h2>Quilting</h2>
+                <p>A fabric construction in which a layer of down or fibrefill is placed between two layers of fabric, and then held in place by stitching or sealing in a regular, consistent, all-over pattern on the goods.</p>
+                <h2>R</h2>
+                <h3>Ramie</h3>
+                <p>A bast fibre, similar to flax, taken from the stalk of a plant grown in China.</p>
+                <h3>Rayon</h3>
+                <p>A manufactured fibre composed of regenerated cellulose, derived from wood pulp, cotton linters, or other vegetable matter. Today, various names for rayon fibres are taken from different manufacturing processes. The two most commonly used production methods for rayon are the ammonium process and the viscose process.</p>
+                <h2>S</h2>
+                <h3>Sailcloth</h3>
+                <p>Any heavy, plain-weave canvas fabric, usually made of cotton, linen, polyester, jute, nylon, etc. that is used for sails and apparel (i.e. bottom weight sportswear).</p>
+                <h3>Sandwash</h3>
+                <p>The soft peach skin finish obtained by blasting a fabric with fine sand.</p>
+                <h3>Sateen Fabric</h3>
+                <p>A fabric made from yarns with low lustre, such as cotton or other staple length fibres. The fabric has a soft, smooth hand and a gentle, subtle lustre. Sateen fabrics are often used for draperies and upholstery. </p>
+                <h3>Satin Fabric</h3>
+                <p>A traditional fabric utilising a satin weave construction to achieve a lustrous fabric surface. The basic type of weave is up of eight weft threads that are tied down With one floating weft thread. It is light to medium-weight with a glossy face and a dull back. Satin is a traditional fabric for evening and wedding garments. Typical examples of satin weave fabrics include: slipper satin, crepe-back satin, faille satin, duchess satin, moleskin, and antique satin.</p>
+                <h3>Schiffli Embroidery</h3>
+                <p>Originated in Switzerland, the word, Schiffli, means "boat", identifiable with the boat-shaped shuttle used in the frame. The lace effect is made by embroidering the motifs on a net ground.</p>
+                <h3>Selvage or Selvedge</h3>
+                <p>The thin compressed edge of a woven fabric which runs parallel to the warp yarns and prevents ravelling. It is usually woven, utilising tougher yarns and a tighter construction than the rest of the fabric. Serge- one of the oldest fabric names, derived from the Latin serica which implies that this was once a silk fabric. Today is implies a hard wearing worsted cloth with a twill weave. Usually has a smooth face although tends to shine with wear due to hard twist and compact weave structure. Holds a crease well. Serge de Sattin - a mohair cloth.</p>
+                <h3>Shantung Dupioni</h3>
+                <p>A spun silk fabric with slubs and forms interesting textures.</p>
+                <h3>Sharkskin</h3>
+                <p>A hard-finished, low lustred, medium-weight fabric in a twill-weave construction. It is most commonly found in men's worsted suiting’s; however, it can also be found in a plain-weave construction of acetate, triacetate, and rayon for women's sportswear.</p>
+                <h3>Shot fabric</h3>
+                <p>A cloth with a warp of one colour and weft of another.</p>
+                <h3>Silk</h3>
+                <p>A natural filament fibre produced by the silkworm in the construction of its cocoon. Most silk is collected from cultivated worms; Tussah silk, or wild silk, is a thicker, shorter fibre produced by worms in their natural habitat. All silk comes from Asia, primarily China.</p>
+                <h3>Silk Gazar</h3>
+                <p>Similar in appearance to organza, gazar is somewhat stiffer and has a looser weave. It was developed and popularised by Cristobal Balenciaga, and is favoured for its light weight and attractive translucency.</p>
+                <h3>Silk Mikado</h3>
+                <p>This blended, twill weave fabric has a beautiful heavy drape and an elegant lustre. It is frequently made into gowns with an architectural stiffness because it holds its shape. Mikado satin is its synthetic cousin.</p>
+                <h3>Solution-dyed</h3>
+                <p>A type of fibre dyeing in which coloured pigments are injected into the spinning solution prior to the extrusion of the fibre through the spinneret. Fibres and yarns coloured in this manner are colour-fast to most destructive agents. </p>
+                <h3>Spandex Fibre</h3>
+                <p>A manufactured elastomeric fibre that can be repeatedly stretched over 500% without breaking, and will still recover to its original length.</p>
+                <h3>Surah</h3>
+                <p>A light weight, lustrous twill weave constructed fabric with a silk-like hand. Surah is the fabric of ties, dresses, and furnishings. It is available in silk, polyester, and rayon.</p>
+                <h2>T</h2>
+                <h3>Taffeta</h3>
+                <p>A lustrous, medium weight, plain weave fabric with a slight ribbed appearance in the filling (crosswise) direction. For formal wear, taffeta is a favourite choice. It provides a crisp hand, with lots of body. Silk taffeta gives the ultimate rustle, but other fibres are also good choices.</p>
+                <h3>Tapestry</h3>
+                <p>A heavy, often hand-woven, ribbed fabric, featuring an elaborate design depicting a historical or current pictorial display. The weft-faced fabric design is made by using coloured filling yarns, only in areas where needed, that are worked back and forth over spun warp yarns, which are visible on the back. End-uses include wall hangings and upholstery.</p>
+                <h3>Tencel</h3>
+                <p>A fabric made from the cellulose of wood pulp, then processed into a silk-like fabric that is very soft with great drape. It's usually a medium weight fabric that can be easily dyed and cared for.</p>
+                <h3>Triacetate</h3>
+                <p>A manufactured fibre, which like acetate, is made by modifying cellulose. However, even more acetate groups have been added to create this fibre. Triacetate is less absorbent and less sensitive to high temperatures than acetate. It can be hand or machine washed and tumble dried, with relatively good wrinkle recovery.</p>
+                <h3>Tulle</h3>
+                <p>A lightweight, extremely fine, machine-made netting, usually with a hexagon shaped mesh effect. End-uses include dance costumes and veils.</p>
+                <h3>Tweed</h3>
+                <p>A coarse, rugged, and often nubby woollen fabric in plain balanced or variation (originally twill) weave. Used as casual suits and coats.</p>
+                <h3>Twill Weave</h3>
+                <p>A basic weave in which the fabrics are constructed by interlacing warp and filling yarns in a progressive alternation which creates a diagonal effect on the face, or right side, of the fabric. In some twill weave fabrics, the diagonal effect may also be seen clearly on the back side of the fabric.</p>
+                <h3>Twist</h3>
+                <p>A term that applies to the number of turns and the direction that two yarns are turned during the manufacturing process. The yarn twist brings the fibres close together and makes them compact. It helps the fibres adhere to one another, increasing yarn strength. The direction and amount of yarn twist helps determine appearance, performance, durability of both yarns and the subsequent fabric or textile product. Single yarns may be twisted to the right (S twist) or to the left (Z twist). Generally, woollen and worsted yarns are S-twist, while cotton and flax yarns are typically Z-twist. Twist is generally expressed as turns per inch (tpi), turns per meter (tpm), or turns per centimetre (tpc).</p>
+                <h3>Two-Way Stretch</h3>
+                <p>Two-way stretch fabrics stretch in one direction, usually from selvedge to selvedge. Four-way stretch fabrics, such as spandex, stretch in both directions, crosswide & lengthwise.</p>
+                <h2>U</h2>
+                <h3>Ultrasuede</h3>
+                <p>A synthetic fabric similar to suede, with a micro-fibre structure, that is stain resistant and durable.</p>
+                <h2>V</h2>
+                <h3>Velour</h3>
+                <p>A closely napped fabric with a soft, velvet-like texture, used for clothing and upholstery. It includes some velvet, and all plush-pile surface cloths.</p>
+                <h3>Velvet</h3>
+                <p>A pile woven cotton, silk, and/or rayon fabric with a soft yet sturdy face. Very much like plush but with a shorter pile. The underside is plain.</p>
+                <h3>Velveteen</h3>
+                <p>A cotton cut-pile weave fabric, utilising extra fill yarn construction, with either a twill or a plain weave back. The fabric is woven with two sets of filling yarns; the extra set creates the pile.</p>
+                <h3>Virgin Wool</h3>
+                <p>New wool that has never been used before, or reclaimed from any spun, woven, knitted, felted, manufactured or used products.</p>
+                <h3>Viscose</h3>
+                <p>The most common type of rayon. It is produced in much greater quantity than cuprammonium rayon, the other commercial type.</p>
+                <h3>Voile</h3>
+                <p>A light, plain-weave, sheer transparent fabric with tightly twisted yarns often having a stiff light finish. Available in novelty effects like pique stripes, printed patterns and plains. It is obtained from cotton, rayon, silk, or wool and used especially for making dresses and curtains.</p>
+                <h2>W</h2>
+                <h3>Warp</h3>
+                <p>In woven fabric, the yarns that run lengthwise and is interwoven with the fill (weft) yarns.</p>
+                <h3>Waterproof</h3>
+                <p>A term applied to fabrics whose pores have been closed, and therefore, will not allow water or air to pass through them.</p>
+                <h3>Water Repellent</h3>
+                <p>A term applied to fabrics that have been treated with a finish which causes them to shed water, but are still air-permeable.</p>
+                <h3>Weft</h3>
+                <p>In woven fabric, the filling yarns that run perpendicular to the warp yarns.</p>
+                <h3>Wool</h3>
+                <p>Usually associated with fibre or fabric made from the fleece of sheep or lamb. However, the term "wool" can also apply to all animal hair fibres, including the hair of the Cashmere or Angora goat or the specialty hair fibres of the camel, alpaca, llama, or vicuna.</p>
+                <h3>Worsted Fabric</h3>
+                <p>A tightly woven fabric made by using only long staple, combed wool or wool-blend yarns. The fabric has a hard, smooth surface. Gabardine is an example of a worsted fabric. A common end use is men's tailored suits.</p>
+                <h3>Woven Fabric</h3>
+                <p>Fabrics composed of two sets of yarns. One set of yarns, the warp, runs along the length of the fabric. The other set of yarns, the fill or weft, is perpendicular to the warp. Woven fabrics are held together by weaving the warp and the fill yarns over and under each other.</p>
+                <h2>Y</h2>
+                <h3>Yarn</h3>
+                <p>A continuous strand of textile fibres created when a cluster of individual fibres are twisted together. These long yarns are used to create fabrics, either by knitting or weaving.</p>
             </div>
         </div>
     )

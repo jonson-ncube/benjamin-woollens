@@ -20,6 +20,7 @@ import AboutFabrics from './pages/AboutFabrics'
 import Feedback from './pages/Feedback'
 import Terms from './pages/Terms'
 import Policy from './pages/Policy'
+import FabricSample from './pages/FabricSample'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path='/feedback' component={Feedback} />
           <Route path='/policy' component={Policy} />
           <Route path='/terms' component={Terms} />
+          <Route path='/sample' component={FabricSample} />
         </Switch>
         <Footer />
       </div>

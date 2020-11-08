@@ -1,0 +1,25 @@
+.fabrics__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fabrics__pics{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.images{
+    display: flex;
+    height: 260px;
+    width: 260px;
+    object-fit: contain;
+}
+
+.fabrics__copy{
+    width: 80%;
+}

@@ -26,16 +26,16 @@ import samples from '../assets/samples.jpg'
 import promos from '../assets/promos.jpg'
 
 // box images
-import brocade from '../assets/box/i1.jpg'
-import coating from '../assets/box/i2.jpg'
-import denim from '../assets/box/i3.jpg'
-import knit from '../assets/box/i4.jpg'
-import hiTech from '../assets/box/i5.jpg'
-import linen from '../assets/box/i6.jpg'
-import shirting from '../assets/box/i7.jpg'
-import silk from '../assets/box/i8.jpg'
-import tweed from '../assets/box/i9.jpg'
-import velvet from '../assets/box/i10.jpg'
+import velvet from '../assets/box/i1.jpg'
+import tweed from '../assets/box/i2.jpg'
+import silk from '../assets/box/i3.jpg'
+import shirting from '../assets/box/i4.jpg'
+import linen from '../assets/box/i5.jpg'
+import hiTech from '../assets/box/i6.jpg'
+import knit from '../assets/box/i7.jpg'
+import denim from '../assets/box/i8.jpg'
+import coating from '../assets/box/i9.jpg'
+import brocade from '../assets/box/i10.jpg'
 
 
 export default function Home() {
@@ -43,21 +43,32 @@ export default function Home() {
         <div>
             <Slider />
             <div className="boxContainer">
-                <BoxContainer src={brocade} alt='brocade' />
-                <BoxContainer src={coating} alt='coating' />
-                <BoxContainer src={denim} alt='demin' />
-                <BoxContainer src={knit} alt='knit' />
-                <BoxContainer src={hiTech} alt='Hi-Tech' />
+                <BoxContainer src={brocade} alt='brocade' text='Brocade' />
+                <BoxContainer src={coating} alt='coating' text='Coating' />
+                <BoxContainer src={denim} alt='demin' text='Demin' />
+                <BoxContainer src={knit} alt='knit' text='Knit' />
+                <BoxContainer src={hiTech} alt='Hi-Tech' text='Hi-Tech' />
             </div>
-            <HomeImage src={promos} alt='sales' />
+            <HomeImage src={samples}
+                alt='sales'
+                title='Fabric Samples'
+                btn='Learn more'
+                link='/sample'
+            />
             <div className="boxContainer">
-                <BoxContainer src={linen} alt='linen' />
-                <BoxContainer src={shirting} alt='shirting' />
-                <BoxContainer src={silk} alt='silk' />
-                <BoxContainer src={tweed} alt='tweed' />
-                <BoxContainer src={velvet} alt='velvet' />
+                <BoxContainer src={linen} alt='linen' text='Linen' />
+                <BoxContainer src={shirting} alt='shirting' text='Shirting' />
+                <BoxContainer src={silk} alt='silk' text='Silk' />
+                <BoxContainer src={tweed} alt='tweed' text='Tweed' />
+                <BoxContainer src={velvet} alt='velvet' text='Velvet' />
             </div>
-            <HomeImage src={samples} alt='Sample-fabrics' />
+            <HomeImage src={promos}
+                alt='Sample-fabrics'
+                title='Visit our showroom'
+                btn='Click here'
+                link='/contact'
+
+            />
             <div className="home__brands">
                 <h2>BRANDS WE STOCK</h2>
                 <div className="home__para">
