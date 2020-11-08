@@ -1,10 +1,12 @@
 import React from 'react'
 import './BoxContainer.css'
 
-export default function BoxContainer() {
+export default function BoxContainer({ src, alt }) {
     return (
         <div className='box'>
-            <h5>Box here</h5>
+            <div className="box__pic">
+                <img src={src} alt={alt} />
+            </div>
         </div>
     )
 }

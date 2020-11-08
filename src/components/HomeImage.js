@@ -1,10 +1,12 @@
 import React from 'react'
 import './HomeImage.css'
 
-export default function HomeImage() {
+export default function HomeImage({ src, alt }) {
     return (
         <div className='home__container'>
-            <p>Image Here</p>
+            <div className="home__hero">
+                <img src={src} alt={alt} />
+            </div>
         </div>
     )
 }

@@ -1,5 +1,14 @@
 .home__container{
     height: 80vh;
     width: 100%;
-    border: 1px solid red;
+}
+
+.home__hero{
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* object-fit: contain; */
 }

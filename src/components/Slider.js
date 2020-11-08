@@ -12,9 +12,9 @@ import i3 from '../assets/i4.jpg'
 export default function Slider() {
 
     const sliderArr = [
+        <ImgComp src={i3} />,
         <ImgComp src={i1} />,
         <ImgComp src={i2} />,
-        <ImgComp src={i3} />,
         <ImgComp src={i4} />,
     ]
 

@@ -28,20 +28,22 @@
     background: none;
     border: none;
     outline: none;
+    color: whitesmoke;
 }
 
 .goLeft:hover{
     background: rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    color: whitesmoke;
+    color: black;
 }
 .goRight:hover{
     background: rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    color: whitesmoke;
+    color: black;
 }
 
 .goRight{
+    color: whitesmoke;
     background: none;
     transition: 0.5s;
     position: absolute;

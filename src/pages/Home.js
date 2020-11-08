@@ -21,26 +21,43 @@ import versace from '../assets/images/logo_34.png'
 import lora from '../assets/images/logo_36.png'
 import vitale from '../assets/images/logo_38.png'
 
+// fabric images
+import samples from '../assets/samples.jpg'
+import promos from '../assets/promos.jpg'
+
+// box images
+import brocade from '../assets/box/i1.jpg'
+import coating from '../assets/box/i2.jpg'
+import denim from '../assets/box/i3.jpg'
+import knit from '../assets/box/i4.jpg'
+import hiTech from '../assets/box/i5.jpg'
+import linen from '../assets/box/i6.jpg'
+import shirting from '../assets/box/i7.jpg'
+import silk from '../assets/box/i8.jpg'
+import tweed from '../assets/box/i9.jpg'
+import velvet from '../assets/box/i10.jpg'
+
+
 export default function Home() {
     return (
         <div>
             <Slider />
             <div className="boxContainer">
-                <BoxContainer />
-                <BoxContainer />
-                <BoxContainer />
-                <BoxContainer />
-                <BoxContainer />
+                <BoxContainer src={brocade} alt='brocade' />
+                <BoxContainer src={coating} alt='coating' />
+                <BoxContainer src={denim} alt='demin' />
+                <BoxContainer src={knit} alt='knit' />
+                <BoxContainer src={hiTech} alt='Hi-Tech' />
             </div>
-            <HomeImage />
+            <HomeImage src={promos} alt='sales' />
             <div className="boxContainer">
-                <BoxContainer />
-                <BoxContainer />
-                <BoxContainer />
-                <BoxContainer />
-                <BoxContainer />
+                <BoxContainer src={linen} alt='linen' />
+                <BoxContainer src={shirting} alt='shirting' />
+                <BoxContainer src={silk} alt='silk' />
+                <BoxContainer src={tweed} alt='tweed' />
+                <BoxContainer src={velvet} alt='velvet' />
             </div>
-            <HomeImage />
+            <HomeImage src={samples} alt='Sample-fabrics' />
             <div className="home__brands">
                 <h2>BRANDS WE STOCK</h2>
                 <div className="home__para">
