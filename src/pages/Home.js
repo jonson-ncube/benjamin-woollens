@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <HomeImage src={samples}
                 alt='sales'
-                title='Fabric Samples'
+                title='Fabric samples'
                 btn='Learn more'
                 link='/sample'
             />
