@@ -36,3 +36,20 @@
 .shoppingCart{
     color: black;
 }
+
+.header__icon{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: slategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    bottom: 27px;
+    left: 27px;
+    border: 3px solid white;
+}

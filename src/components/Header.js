@@ -47,6 +47,7 @@ export default function Header() {
                 <IconButton>
                     <Link to='/checkout'>
                         <div className="header__right">
+                            <span className="header__icon">2</span>
                             <ShoppingCartIcon className='shoppingCart' />
                         </div>
                     </Link>

@@ -7,6 +7,7 @@ export default function FabricsPage() {
         <div className='fabrics__container'>
             <div className="fabrics__hero">
                 <img src={fabric} alt='fabrics' className='fabrics__img' />
+
             </div>
             <div className="fabrics__body">
                 <h2>OUR FABRICS</h2>
