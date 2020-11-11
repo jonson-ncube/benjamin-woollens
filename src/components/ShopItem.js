@@ -9,7 +9,6 @@ export default function ShopItem({ src, header }) {
                 <img src={src} alt="fabic-picture" className="item__pic" />
             </div>
             <button className='item__button'>SHOP NOW</button>
-
         </div>
     )
 }

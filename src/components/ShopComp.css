@@ -1,0 +1,32 @@
+.shopItem_container{
+    width: 30vw;
+    /* border: 1px solid red; */
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.shopItem_container>button{
+    width: 30vw;
+    height: 40vh;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    position: absolute;
+    font-size: 0;
+}
+
+.shopItem_container>button:hover{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+}
+
+.store__img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}

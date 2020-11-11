@@ -22,6 +22,24 @@ import Terms from './pages/Terms'
 import Policy from './pages/Policy'
 import FabricSample from './pages/FabricSample'
 
+//Shop pages
+import Bespoke from './pages/shop/Bespoke'
+import Brocade from './pages/shop/Brocade'
+import Coating from './pages/shop/Coating'
+import Cotton from './pages/shop/Cotton'
+import Denim from './pages/shop/Denim'
+import Goergette from './pages/shop/Goergette'
+import HiTech from './pages/shop/HiTech'
+import Knit from './pages/shop/Knit'
+import Linen from './pages/shop/Linen'
+import Lining from './pages/shop/Lining'
+import Ppe from './pages/shop/Ppe'
+import Shirting from './pages/shop/Shirting'
+import Silk from './pages/shop/Silk'
+import Trimming from './pages/shop/Trimming'
+import Tweed from './pages/shop/Tweed'
+import Velvet from './pages/shop/Velvet'
+
 function App() {
   return (
     <Router>
@@ -45,6 +63,24 @@ function App() {
           <Route path='/policy' component={Policy} />
           <Route path='/terms' component={Terms} />
           <Route path='/sample' component={FabricSample} />
+
+          <Route path='/bespoke' exact component={Bespoke} />
+          <Route path='/brocade' exact component={Brocade} />
+          <Route path='/coating' exact component={Coating} />
+          <Route path='/cotton' exact component={Cotton} />
+          <Route path='/denim' exact component={Denim} />
+          <Route path='/goergette' exact component={Goergette} />
+          <Route path='/hitech' exact component={HiTech} />
+          <Route path='/knit' exact component={Knit} />
+          <Route path='/linen' exact component={Linen} />
+          <Route path='/lining' exact component={Lining} />
+          <Route path='/ppe' exact component={Ppe} />
+          <Route path='/shirting' exact component={Shirting} />
+          <Route path='/silk' exact component={Silk} />
+          <Route path='/trimming' exact component={Trimming} />
+          <Route path='/tweed' exact component={Tweed} />
+          <Route path='/velvet' exact component={Velvet} />
+
         </Switch>
         <Footer />
       </div>

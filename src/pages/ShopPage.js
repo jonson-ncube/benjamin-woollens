@@ -2,6 +2,7 @@ import React from 'react'
 import './ShopPage.css'
 import banner from '../assets/images/shop_banner_02.jpg'
 import ShopItem from '../components/ShopItem'
+import { Link } from 'react-router-dom'
 
 //Shop cover images
 
@@ -17,12 +18,15 @@ import linen from '../assets/covers/linen.png'
 import lining from '../assets/covers/lining.png'
 import shirting from '../assets/covers/shirting.png'
 import silk from '../assets/covers/silk.png'
-import triming from '../assets/covers/triming.png'
+import trimming from '../assets/covers/triming.png'
 import tweed from '../assets/covers/tweed.png'
 import velvet from '../assets/covers/velvet.png'
 import ppe from '../assets/covers/ppe.png'
 
-
+const navStyle = {
+    textDecoration: 'none',
+    color: 'black',
+}
 
 
 export default function ShopPage() {
@@ -39,76 +43,108 @@ export default function ShopPage() {
                 <h2>STORE COLLECTION</h2>
                 <div className="shop_group">
                     <div className="shop__row">
-                        <ShopItem
-                            header='EVERYTHING BESPOKE'
-                            src={bespoke}
-                        />
-                        <ShopItem
-                            header='EVERYTHING BROCADE'
-                            src={brocade}
-                        />
-                        <ShopItem
-                            header='EVERYTHING COATING'
-                            src={coating}
-                        />
-                        <ShopItem
-                            header='EVERYTHING COTTON'
-                            src={cotton}
-                        />
+                        <Link to='/bespoke' style={navStyle} >
+                            <ShopItem
+                                header='ALL THINGS BESPOKE'
+                                src={bespoke}
+                            />
+                        </Link>
+                        <Link to='/brocade' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS BROCADE'
+                                src={brocade}
+                            />
+                        </Link>
+                        <Link to='/coating' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS COATING'
+                                src={coating}
+                            />
+                        </Link>
+                        <Link to='/cotton' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS COTTON'
+                                src={cotton}
+                            />
+                        </Link>
                     </div>
                     <div className="shop__row">
-                        <ShopItem
-                            header='EVERYTHING DENIM'
-                            src={denim}
-                        />
-                        <ShopItem
-                            header='EVERYTHING GEORGETTE'
-                            src={georgette}
-                        />
-                        <ShopItem
-                            header='EVERYTHING HI-TECH'
-                            src={hi_tech}
-                        />
-                        <ShopItem
-                            header='EVERYTHING KNIT'
-                            src={knit}
-                        />
+                        <Link to='/denim' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS DENIM'
+                                src={denim}
+                            />
+                        </Link>
+                        <Link to='/goergette' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS GEORGETTE'
+                                src={georgette}
+                            />
+                        </Link>
+                        <Link to='/hitech' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS HI-TECH'
+                                src={hi_tech}
+                            />
+                        </Link>
+                        <Link to='/knit' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS KNIT'
+                                src={knit}
+                            />
+                        </Link>
                     </div>
                     <div className="shop__row">
-                        <ShopItem
-                            header='EVERYTHING LINEN'
-                            src={linen}
-                        />
-                        <ShopItem
-                            header='EVERYTHING LINING'
-                            src={lining}
-                        />
-                        <ShopItem
-                            header='EVERYTHING SHIRTING'
-                            src={shirting}
-                        />
-                        <ShopItem
-                            header='EVERYTHING SILK'
-                            src={silk}
-                        />
+                        <Link to='/linen' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS LINEN'
+                                src={linen}
+                            />
+                        </Link>
+                        <Link to='/lining' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS LINING'
+                                src={lining}
+                            />
+                        </Link>
+                        <Link to='/shirting' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS SHIRTING'
+                                src={shirting}
+                            />
+                        </Link>
+                        <Link to='/silk' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS SILK'
+                                src={silk}
+                            />
+                        </Link>
                     </div>
                     <div className="shop__row">
-                        <ShopItem
-                            header='EVERYTHING TRIMMING'
-                            src={triming}
-                        />
-                        <ShopItem
-                            header='EVERYTHING TWEED'
-                            src={tweed}
-                        />
-                        <ShopItem
-                            header='EVERYTHING VELVET'
-                            src={velvet}
-                        />
-                        <ShopItem
-                            header='EVERYTHING PPE'
-                            src={ppe}
-                        />
+                        <Link to='/trimming' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS TRIMMING'
+                                src={trimming}
+                            />
+                        </Link>
+                        <Link to='/tweed' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS TWEED'
+                                src={tweed}
+                            />
+                        </Link>
+                        <Link to='/velvet' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS VELVET'
+                                src={velvet}
+                            />
+                        </Link>
+                        <Link to='/ppe' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS PPE'
+                                src={ppe}
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>

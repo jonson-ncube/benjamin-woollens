@@ -1,0 +1,24 @@
+.bespoke__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #eee;
+}
+
+.bespoke__copy{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+}
+
+.bespoke__body{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+}
