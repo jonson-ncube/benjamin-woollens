@@ -14,11 +14,20 @@ import i10 from '../../assets/store/silk/10.jpg'
 import i11 from '../../assets/store/silk/11.jpg'
 import i12 from '../../assets/store/silk/12.jpg'
 import i13 from '../../assets/store/silk/13.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Silk() {
     return (
-        <div>
-            <h1>Silk</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS SILK</h2>
+                <div className="bespoke__copy">
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }

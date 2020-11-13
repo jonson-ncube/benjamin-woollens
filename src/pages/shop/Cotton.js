@@ -36,11 +36,77 @@ import i32 from '../../assets/store/cotton/32.jpg'
 import i33 from '../../assets/store/cotton/33.jpg'
 import i34 from '../../assets/store/cotton/34.jpg'
 import i35 from '../../assets/store/cotton/35.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Cotton() {
     return (
-        <div>
-            <h1>Cotton</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS COTTON</h2>
+                <div className="bespoke__copy">
+                    <p>Benjamin Woollens stocks a wide range of high-end cottons. This includes 100% Egyptian cotton shirting, cotton prints for summer dresses, jackets and cotton knits for casual wear.</p>
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i1} title='Abstract Floral Print Cotton Stretch' />
+                <ShopComp src={i2} title='Faberge Eggs Printed Cotton Stretch' />
+                <ShopComp src={i3} title='Paint Splash Print Cotton Stretch' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i4} title='Peacock Feather Print Cotton Stretch' />
+                <ShopComp src={i5} title='Floral Water Colours Cotton Print' />
+                <ShopComp src={i6} title='Paint Slash Print Cotton Stretch' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i7} title='Flying Crane Printed Cotton Stretch' />
+                <ShopComp src={i8} title='Sophisticated Lady Cotton Print' />
+                <ShopComp src={i9} title='Forest Animal Print Cotton Stretch' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i10} title='Abstract Floral Print Cotton Stretch' />
+                <ShopComp src={i11} title='Pastel Moth Print Cotton Stretch' />
+                <ShopComp src={i12} title='Multi-coloured Pendant Print Cotton Stretch' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i13} title='Abstract Face Portraits Cotton Stretch' />
+                <ShopComp src={i14} title='Dragonfly Print Cotton Stretch' />
+                <ShopComp src={i15} title='Duck Feather Cotton Print' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i16} title='Abstract Facial Expressions Print Cotton Stretch' />
+                <ShopComp src={i17} title='Many Faces Cotton Print' />
+                <ShopComp src={i18} title='Multi-coloured Animal Print Cotton Stretch' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i19} title='Abstract Swirls Print Cotton Stretch' />
+                <ShopComp src={i20} title='Retro Floral Print' />
+                <ShopComp src={i21} title='100% Lightweight Floral Cotton' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i22} title='Multi-Coloured Animal Print' />
+                <ShopComp src={i23} title='Floral Stretch Denim' />
+                <ShopComp src={i24} title='100% Cotton Pique' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i25} title='Nautical Dreamscape' />
+                <ShopComp src={i26} title='Floral Cotton Pique' />
+                <ShopComp src={i27} title='Mandala Printed Stretch Cotton' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i28} title='Mandala Printed Stretch Cotton' />
+                <ShopComp src={i29} title='Cotton Stretch Snakeskin Print' />
+                <ShopComp src={i30} title='Oriental Peacock Motif' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i31} title='Floral Cotton Print' />
+                <ShopComp src={i32} title='100% Gingham Check Cotton' />
+                <ShopComp src={i33} title='Multi-Coloured Check Cotton' />
+            </div>
+            <div className="bespoke__body">
+                <ShopComp src={i34} title='Cotton Stretch Corduroy' />
+                <ShopComp src={i35} title='Carnet Corduroy Cotton' />
+            </div>
+        </>
     )
 }

@@ -21,6 +21,7 @@ import Feedback from './pages/Feedback'
 import Terms from './pages/Terms'
 import Policy from './pages/Policy'
 import FabricSample from './pages/FabricSample'
+import ProductView from './pages/ProductView';
 
 //Shop pages
 import Bespoke from './pages/shop/Bespoke'
@@ -64,6 +65,7 @@ function App() {
           <Route path='/terms' component={Terms} />
           <Route path='/sample' component={FabricSample} />
 
+          <Route path='/product' exact component={ProductView} />
           <Route path='/bespoke' exact component={Bespoke} />
           <Route path='/brocade' exact component={Brocade} />
           <Route path='/coating' exact component={Coating} />

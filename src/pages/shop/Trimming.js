@@ -57,11 +57,20 @@ import i53 from '../../assets/store/trimming/53.jpg'
 import i54 from '../../assets/store/trimming/54.jpg'
 import i55 from '../../assets/store/trimming/55.jpg'
 import i56 from '../../assets/store/trimming/56.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Trimming() {
     return (
-        <div>
-            <h1>Trimming</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS TRIMMING</h2>
+                <div className="bespoke__copy">
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }

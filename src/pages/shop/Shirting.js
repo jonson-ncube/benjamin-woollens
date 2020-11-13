@@ -27,11 +27,20 @@ import i23 from '../../assets/store/shirting/23.jpg'
 import i24 from '../../assets/store/shirting/24.jpg'
 import i25 from '../../assets/store/shirting/25.jpg'
 import i26 from '../../assets/store/shirting/26.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Shirting() {
     return (
-        <div>
-            <h1>Shirting</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS SHIRTING</h2>
+                <div className="bespoke__copy">
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }

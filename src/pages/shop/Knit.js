@@ -28,11 +28,21 @@ import i24 from '../../assets/store/knit/24.jpg'
 import i25 from '../../assets/store/knit/25.jpg'
 import i26 from '../../assets/store/knit/26.jpg'
 import i27 from '../../assets/store/knit/27.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Knit() {
     return (
-        <div>
-            <h1>Knit</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS KNIT</h2>
+                <div className="bespoke__copy">
+                    <p>Benjamin Woollens stocks high quality plain and printed knits imported from Europe. Our knits come in a variety of qualities including cotton, viscose and wool.</p>
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }

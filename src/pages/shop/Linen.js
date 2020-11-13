@@ -12,11 +12,20 @@ import i8 from '../../assets/store/linen/8.jpg'
 import i9 from '../../assets/store/linen/9.jpg'
 import i10 from '../../assets/store/linen/10.jpg'
 import i11 from '../../assets/store/linen/11.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Linen() {
     return (
-        <div>
-            <h1>Linen</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS LINEN</h2>
+                <div className="bespoke__copy">
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }

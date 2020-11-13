@@ -34,11 +34,20 @@ import i31 from '../../assets/store/tweed/31.jpg'
 import i32 from '../../assets/store/tweed/32.jpg'
 import i33 from '../../assets/store/tweed/33.jpg'
 import i34 from '../../assets/store/tweed/34.jpg'
+import ShopComp from '../../components/ShopComp'
 
 export default function Tweed() {
     return (
-        <div>
-            <h1>Tweed</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS TWEED</h2>
+                <div className="bespoke__copy">
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }

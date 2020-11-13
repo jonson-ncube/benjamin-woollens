@@ -18,12 +18,21 @@ import i14 from '../../assets/store/lining/14.jpg'
 import i15 from '../../assets/store/lining/15.jpg'
 import i16 from '../../assets/store/lining/16.jpg'
 import i17 from '../../assets/store/lining/17.jpg'
+import ShopComp from '../../components/ShopComp'
 
 
 export default function Lining() {
     return (
-        <div>
-            <h1>Lining</h1>
-        </div>
+        <>
+            <div className='bespoke__container'>
+                <h2>ALL THINGS LINING</h2>
+                <div className="bespoke__copy">
+                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                </div>
+            </div>
+            <div className="bespoke__body">
+                <ShopComp />
+            </div>
+        </>
     )
 }
