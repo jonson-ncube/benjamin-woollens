@@ -1,17 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ProductView.css'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { useHistory } from 'react-router-dom'
+import { addToCart } from '../redux/shopping/shopActions'
+import { useDispatch } from 'react-redux';
 
-export default function ProductView() {
+export default function ProductView({ id, title, src, price, comp, color, wide, recApp, reCare, code }) {
+
+    const [cost, setCost] = useState(price)
+
+    const history = useHistory()
+
+    console.log(src)
+
+    const dispatch = useDispatch()
+
+    const handleCart = (id) => {
+        dispatch(addToCart(id))
+    }
+
+    const handleClick = () => {
+        history.goBack()
+    }
+
+    const handlePrice = (e) => {
+        setCost(e.target.value * 10)
+    }
+
     return (
         <div className='product__container'>
             <div className="product__header">
-                <ArrowBackIosIcon />
-                <p>Back</p>
+                <ArrowBackIosIcon onClick={handleClick} />
+                <button onClick={handleClick}>Back</button>
             </div>
             <div className="product__body">
                 <div className="product__image">
-                    <img src="" alt="" className="product__pic" />
+                    <img src={src} alt="" className="product__pic" />
                 </div>
                 <div className="product__details">
                     <h2>Emanuel Ungaro Floral Brocade</h2>
@@ -23,10 +47,13 @@ export default function ProductView() {
                     <p><span>Product Code:</span> 17693</p>
                     <div>
                         <p><span>Quantity:</span></p>
-                        <input type="text" className="product__qty" placeholder='price per meter' />
-                        <h2>R 995.00</h2>
+                        <div className="quantity">
+                            <input onChange={handlePrice} type="text" className="product__qty" placeholder='1' value={price} />
+                            <p> Price per meter</p>
+                        </div>
+                        <h2>R {cost}</h2>
                         <div className="product__button">
-                            <button className='shopCart'>Add to cart</button>
+                            <button onClick={handleCart} className='shopCart'>Add to Cart</button>
                         </div>
                     </div>
                 </div>

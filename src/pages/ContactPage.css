@@ -5,6 +5,15 @@
     align-items: center;
     margin-top: 30px;
 }
+.contact__err{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: red;
+
+}
 
 .contact__header{
     display: flex;

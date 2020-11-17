@@ -21,8 +21,16 @@ export default function ContactPage() {
         googleMapsApiKey: 'AIzaSyCJ092qJiq6aae0MPDZQgxh9BJDtVw1X_A',
     })
 
-    if (loadError) return 'Error loading maps'
-    if (!isLoaded) return 'Loading maps...'
+    if (loadError) return (
+        <div className="contact__err">
+            <h3>Error loading maps</h3>
+        </div>
+    )
+    if (!isLoaded) return (
+        <div className="contact__err">
+            <h3>Loading maps...</h3>
+        </div>
+    )
 
     return (
         <div className='contact__container'>

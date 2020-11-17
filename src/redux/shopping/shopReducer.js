@@ -1,22 +1,37 @@
-import { ADD_TO_CART, ADJUST_QTY, REMOVE_FROM_CART, LOAD_CURRENT_ITEM } from './shopTypes'
+import shopTypes from './shopTypes'
 
 const initialState = {
-    product: [], // {id, tittle, desc, price, img}
-    cart: [],    //{id, title, desc, price, img, qty}
-    currentItem: null
+    product: [],
+    cart: [],
 }
+
+export const getBasketTotal = (cart) =>
+
+    cart?.reduce((amount, item) => item.price + amount, 0)
+
 
 export const shopReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_TO_CART:
-            return {}
-        case REMOVE_FROM_CART:
-            return {}
-        case ADJUST_QTY:
-            return {}
-        case LOAD_CURRENT_ITEM:
-            return {}
+        case shopTypes.ADD_TO_CART:
+            return {
+                ...state,
+                cart: [...state.cart, action.payload],
+            }
+        case shopTypes.REMOVE_FROM_CART:
+            const index = state.cart.findIndex(
+                cartItem => cartItem.id === action.payload
+            )
+
+            let newCart = [...state.cart]
+            if (index >= 0) {
+                newCart.splice(index, 1)
+            } else {
+                console.warn(`Can's remove product (id:${action.payload}) as its not in basket!`)
+            }
+            return {
+                ...state, cart: newCart
+            }
         default:
-            return initialState;
+            return state;
     }
 }

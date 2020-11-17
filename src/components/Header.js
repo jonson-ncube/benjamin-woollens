@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 import logo from '../assets/benjwool_logo.jpg'
 import IconButton from '@material-ui/core/IconButton'
+import { useSelector } from 'react-redux';
 
 export default function Header() {
 
@@ -13,6 +14,8 @@ export default function Header() {
         textDecoration: 'none',
         color: 'black'
     }
+
+    const mapState = useSelector(state => state.shopState.cart)
 
     return (
         <div className='header'>
@@ -47,7 +50,7 @@ export default function Header() {
                 <IconButton>
                     <Link to='/checkout'>
                         <div className="header__right">
-                            <span className="header__icon">0</span>
+                            <span className="header__icon">{mapState.length}</span>
                             <ShoppingCartIcon className='shoppingCart' />
                         </div>
                     </Link>
