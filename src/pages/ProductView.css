@@ -30,3 +30,18 @@
 .product__details{
     margin-left: 20px;
 }
+
+.product__qty{
+    outline: none;
+}
+
+.shopCart{
+    background-color: bisque;
+    height: 35px;
+    width: 150px;
+    border-radius: 6px;
+    font-size: small;
+    /* color: white; */
+    font-weight: bold;
+    outline: none;
+}

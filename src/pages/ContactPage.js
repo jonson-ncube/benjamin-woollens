@@ -1,20 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactPage.css'
-import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps'
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
+import mapStyles from '../mapStyles'
 
-function Map() {
-    return (
-        <GoogleMap
-            defaultZoom={8}
-            defaultCenter={{ lat: -26.209030, lng: 28.041700 }}
-        />
-    )
+const mapContainerStyle = { width: '100%', height: '100%' }
+const jhb = { lat: -26.20951, lng: 28.041462 }
+const pta = { lat: -25.811970, lng: 28.233950 }
+const cape = { lat: -33.9291, lng: 18.5033 }
+const options = {
+    styles: mapStyles,
+    disableDefaultUI: true,
+    zoomControl: true
 }
 
-const WrappedMaps = withScriptjs(withGoogleMap(Map))
-
-
 export default function ContactPage() {
+
+    // const [marker, setMarker] = useState([])
+
+    const { isLoaded, loadError } = useLoadScript({
+        googleMapsApiKey: 'AIzaSyCJ092qJiq6aae0MPDZQgxh9BJDtVw1X_A',
+    })
+
+    if (loadError) return 'Error loading maps'
+    if (!isLoaded) return 'Loading maps...'
+
     return (
         <div className='contact__container'>
             <h1>Contact us</h1>
@@ -32,11 +41,23 @@ export default function ContactPage() {
                     <a href="mailto:info@benjaminwoollens.co.za">info@benjaminwoollens.co.za</a>
                 </div>
                 <div className="contact__map">
-                    <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7hiJTlw2AVNbwIHFbPN7XOx5zFftpRK0}`}
+                    <GoogleMap
+                        mapContainerStyle={mapContainerStyle}
+                        zoom={16}
+                        center={jhb}
+                        options={options}
+                    // onClick={e => setMarker([]), console.log(marker)}
+                    >
+                        <Marker
+                            position={jhb}
+                            key={jhb}
+                        />
+                    </GoogleMap>
+                    {/* <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
                         loadingElement={<div style={{ height: '100%', width: '100%' }} />}
                         containerElement={<div style={{ height: '100%', width: '100%' }} />}
                         mapElement={<div style={{ height: '100%', width: '100%' }} />}
-                    />
+                    /> */}
                 </div>
             </div>
             <div className="contact__header">
@@ -53,11 +74,15 @@ export default function ContactPage() {
                     <a href="mailto:info@benjaminwoollens.co.za">info@benjaminwoollens.co.za</a>
                 </div>
                 <div className="contact__map">
-                    <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7hiJTlw2AVNbwIHFbPN7XOx5zFftpRK0}`}
-                        loadingElement={<div style={{ height: '100%', width: '100%' }} />}
-                        containerElement={<div style={{ height: '100%', width: '100%' }} />}
-                        mapElement={<div style={{ height: '100%', width: '100%' }} />}
-                    />
+                    <GoogleMap
+                        mapContainerStyle={mapContainerStyle}
+                        zoom={16}
+                        center={pta}
+                        options={options}
+                    ><Marker
+                            position={pta}
+                            key={pta}
+                        /></GoogleMap>
                 </div>
             </div>
             <div className="contact__header">
@@ -76,11 +101,15 @@ export default function ContactPage() {
                     <a href="mailto:geralds.za@gmail.com">geralds.za@gmail.com</a>
                 </div>
                 <div className="contact__map">
-                    <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7hiJTlw2AVNbwIHFbPN7XOx5zFftpRK0}`}
-                        loadingElement={<div style={{ height: '100%', width: '100%' }} />}
-                        containerElement={<div style={{ height: '100%', width: '100%' }} />}
-                        mapElement={<div style={{ height: '100%', width: '100%' }} />}
-                    />
+                    <GoogleMap
+                        mapContainerStyle={mapContainerStyle}
+                        zoom={16}
+                        center={cape}
+                        options={options}
+                    ><Marker
+                            position={cape}
+                            key={cape}
+                        /></GoogleMap>
                 </div>
             </div>
         </div>

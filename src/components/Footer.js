@@ -11,7 +11,8 @@ export default function Footer() {
     const navStyle = {
         textDecoration: 'none',
         color: 'white',
-        marginTop: -25
+        lineHeight: 0
+        // marginTop: -25
     }
 
     return (
