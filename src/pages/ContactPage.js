@@ -1,5 +1,18 @@
 import React from 'react'
 import './ContactPage.css'
+import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps'
+
+function Map() {
+    return (
+        <GoogleMap
+            defaultZoom={8}
+            defaultCenter={{ lat: -26.209030, lng: 28.041700 }}
+        />
+    )
+}
+
+const WrappedMaps = withScriptjs(withGoogleMap(Map))
+
 
 export default function ContactPage() {
     return (
@@ -19,7 +32,11 @@ export default function ContactPage() {
                     <a href="mailto:info@benjaminwoollens.co.za">info@benjaminwoollens.co.za</a>
                 </div>
                 <div className="contact__map">
-                    Map
+                    <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7hiJTlw2AVNbwIHFbPN7XOx5zFftpRK0}`}
+                        loadingElement={<div style={{ height: '100%', width: '100%' }} />}
+                        containerElement={<div style={{ height: '100%', width: '100%' }} />}
+                        mapElement={<div style={{ height: '100%', width: '100%' }} />}
+                    />
                 </div>
             </div>
             <div className="contact__header">
@@ -36,7 +53,11 @@ export default function ContactPage() {
                     <a href="mailto:info@benjaminwoollens.co.za">info@benjaminwoollens.co.za</a>
                 </div>
                 <div className="contact__map">
-                    Map
+                    <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7hiJTlw2AVNbwIHFbPN7XOx5zFftpRK0}`}
+                        loadingElement={<div style={{ height: '100%', width: '100%' }} />}
+                        containerElement={<div style={{ height: '100%', width: '100%' }} />}
+                        mapElement={<div style={{ height: '100%', width: '100%' }} />}
+                    />
                 </div>
             </div>
             <div className="contact__header">
@@ -55,7 +76,11 @@ export default function ContactPage() {
                     <a href="mailto:geralds.za@gmail.com">geralds.za@gmail.com</a>
                 </div>
                 <div className="contact__map">
-                    Map
+                    <WrappedMaps googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7hiJTlw2AVNbwIHFbPN7XOx5zFftpRK0}`}
+                        loadingElement={<div style={{ height: '100%', width: '100%' }} />}
+                        containerElement={<div style={{ height: '100%', width: '100%' }} />}
+                        mapElement={<div style={{ height: '100%', width: '100%' }} />}
+                    />
                 </div>
             </div>
         </div>

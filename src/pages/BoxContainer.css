@@ -6,6 +6,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .box__pic{
@@ -15,20 +16,14 @@
     overflow: hidden;
 }
 
-.box >p{
-    position: absolute;
-    color: white;
-    font-weight: 500;
-    font-size: large;
-    text-shadow: 2.5px 1.5px #000000;
-}
-
 .box__sub{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    align-items: center;
     color: white;
     font-weight: 500;
     font-size: large;
     text-shadow: 2.5px 1.5px #000000;
-    padding-top: 50px;
-
 }
