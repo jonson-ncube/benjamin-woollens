@@ -10,7 +10,7 @@ export default function ShopComp({ id, title, src, price, comp, color, country, 
 
     const handleSubmit = () => {
         dispatch({
-            type: shopTypes.LOAD_PRODUCTS,
+            type: shopTypes.ADD_TO_CART,
             payload: {
                 id: id, title: title, src: src, price: price,
                 comp: comp, color: color, width: width,

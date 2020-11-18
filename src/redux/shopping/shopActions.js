@@ -15,14 +15,9 @@ export const removeFromCart = (id) => {
     }
 }
 
-export const loadProducts = ({ id, title, src, price, comp, color, country, width, recApp, reCare, proCode }) => {
+export const loadProducts = (id) => {
     return {
         type: shopTypes.LOAD_PRODUCTS,
-        payload: {
-            id: id, title: title, src: src, price: price,
-            comp: comp, color: color, width: width,
-            recApp: recApp, reCare: reCare,
-            proCode: proCode, country: country
-        }
+        payload: id
     }
 }

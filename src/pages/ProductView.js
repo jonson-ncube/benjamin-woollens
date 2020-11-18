@@ -50,7 +50,7 @@ export default function ProductView({ id, title, src, price, comp, color, width,
     }
 
     const handlePrice = (e) => {
-        setCost(e.target.value * 10)
+        setCost(e.target.value * price)
     }
 
     return (
@@ -73,12 +73,12 @@ export default function ProductView({ id, title, src, price, comp, color, width,
                     <p><span>Recommended Care:</span> {reCare}</p>
                     <p><span>Product Code:</span> {proCode}</p>
                     <div>
-                        <p><span>Quantity:</span></p>
+                        <p><span>Material Length:</span></p>
                         <div className="quantity">
-                            <input onChange={handlePrice} type="text" className="product__qty" placeholder='1' value='' />
-                            <p> Price per meter</p>
+                            <input onChange={handlePrice} type="text" className="product__qty" placeholder='1' />
+                            <p>Number of meters</p>
                         </div>
-                        <h2>R {cost}</h2>
+                        <h2>R {parseFloat(cost).toFixed(2)}</h2>
                         <div className="product__button">
                             <button onClick={() => handleCart()} className='shopCart'>Add to Cart</button>
                         </div>

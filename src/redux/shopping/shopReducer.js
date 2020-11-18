@@ -4,6 +4,7 @@ import bespokeData from '../../data/bespokeData'
 const initialState = {
     product: bespokeData,
     cart: [],
+    load: []
 }
 
 export const getBasketTotal = (cart) =>
@@ -37,7 +38,7 @@ export const shopReducer = (state = initialState, action) => {
         case shopTypes.LOAD_PRODUCTS:
             return {
                 ...state,
-                cart: [...state.cart, action.payload]
+                load: [...state.load, action.payload]
             }
 
         default:
