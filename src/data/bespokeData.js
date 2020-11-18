@@ -92,7 +92,7 @@ const bespokeData = [
     },
     {
         title: "Super 150's Wool",
-        price: '1 349.95',
+        price: '1349.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F8.jpg?alt=media&token=e08f284d-38fc-4158-ac7e-1e462a1a7522',
         id: '18156',
         proCode: '18156',
@@ -105,7 +105,7 @@ const bespokeData = [
     },
     {
         title: 'Dormeuil Dorsilk Wool & Silk',
-        price: '2 199.95',
+        price: '2199.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F9.jpg?alt=media&token=4610615f-4598-45ab-81cb-96bafb318955',
         id: '17738',
         proCode: '17738',
@@ -118,7 +118,7 @@ const bespokeData = [
     },
     {
         title: 'Dormeuil Dorsilk Wool & Silk',
-        price: '2 199.95',
+        price: '2199.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F10.jpg?alt=media&token=a6a5be17-2b6a-41aa-804a-faad02c544d8',
         id: '17737',
         proCode: '17737',
@@ -131,7 +131,7 @@ const bespokeData = [
     },
     {
         title: 'Dormeuil Dorsilk Wool & Silk',
-        price: '2 199.95',
+        price: '2199.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F11.jpg?alt=media&token=7c4e600c-7071-4b51-aeac-a4ff20c8060c',
         id: '17739',
         proCode: '17739',
@@ -157,7 +157,7 @@ const bespokeData = [
     },
     {
         title: 'Super 110s Wool Block Check',
-        price: '1 079.95',
+        price: '1079.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F13.jpg?alt=media&token=122e0040-98e3-4f4e-9eae-ab742d4d644d',
         id: '18155',
         proCode: '18155',
@@ -170,7 +170,7 @@ const bespokeData = [
     },
     {
         title: 'Super 150s Wool',
-        price: '1 999.95',
+        price: '1999.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F14.jpg?alt=media&token=32afce7c-1217-4456-9c7e-da8a23b17297',
         id: '17906',
         proCode: '17906',
@@ -196,7 +196,7 @@ const bespokeData = [
     },
     {
         title: 'Guabello Super 130s Wool',
-        price: '1 399.95',
+        price: '1399.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F16.jpg?alt=media&token=772917e9-db66-4070-9236-aad43ec144bc',
         id: '17903',
         proCode: '17903',
@@ -209,7 +209,7 @@ const bespokeData = [
     },
     {
         title: 'Super 130s Wool',
-        price: '1 399.95',
+        price: '1399.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F17.jpg?alt=media&token=c3e2423a-b914-4560-85b7-b738e8af4f44',
         id: '17902',
         proCode: '17902',
@@ -248,7 +248,7 @@ const bespokeData = [
     },
     {
         title: 'Emanuel Ungaro Heavy-Weight Wool',
-        price: '1 469..95',
+        price: '1469.95',
         src: 'https://firebasestorage.googleapis.com/v0/b/benjamin-woollens.appspot.com/o/bespoke%2F20.png?alt=media&token=56e7b93a-1af0-46b5-81f1-d9853fa6e03d',
         id: '17698',
         proCode: '17698',
