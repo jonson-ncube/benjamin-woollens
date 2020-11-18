@@ -22,6 +22,11 @@
     cursor: pointer;
 }
 
+.product__pic{
+    object-fit: contain;
+    width: 100%;
+}
+
 .product__header>button{
     outline: none;
     border: none;
@@ -30,7 +35,9 @@
 }
 
 .product__image{
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
     width: 45%;
 
 }
@@ -42,7 +49,7 @@
 .product__qty{
     align-self: center;
     outline: none;
-    width: 50px;
+    width: 90px;
     height: auto;
     border-width: medium;
     font-size: larger;

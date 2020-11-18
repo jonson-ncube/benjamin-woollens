@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/Header';
-
+// import bespokeData from './data/bespokeData'
 
 import AboutPage from './pages/AboutPage'
 import CartPage from './pages/CartPage'
@@ -65,7 +65,7 @@ function App() {
           <Route path='/terms' component={Terms} />
           <Route path='/sample' component={FabricSample} />
 
-          <Route path='/product' exact component={ProductView} />
+          <Route path='/product/:id' exact component={ProductView} />
           <Route path='/bespoke' exact component={Bespoke} />
           <Route path='/brocade' exact component={Brocade} />
           <Route path='/coating' exact component={Coating} />

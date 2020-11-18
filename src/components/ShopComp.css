@@ -1,6 +1,7 @@
 .shopItem_container{
     width: 30vw;
     /* border: 1px solid red; */
+    margin: 10px;
     height: 40vh;
     display: flex;
     justify-content: center;

@@ -2,21 +2,47 @@ import React, { useState } from 'react'
 import './ProductView.css'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { useHistory } from 'react-router-dom'
-import { addToCart } from '../redux/shopping/shopActions'
-import { useDispatch } from 'react-redux';
+import { addToCart, loadProducts } from '../redux/shopping/shopActions'
+import { useDispatch, useSelector } from 'react-redux';
+import shopTypes from '../redux/shopping/shopTypes';
 
-export default function ProductView({ id, title, src, price, comp, color, wide, recApp, reCare, code }) {
+export default function ProductView({ id, title, src, price, comp, color, width, country, recApp, reCare, proCode }) {
 
-    const [cost, setCost] = useState(price)
+
+    const mapState = useSelector(state => state.shopState.cart)
+
+    // const { title } = mapState
+
+    mapState.map(item => {
+        id = item.id
+        src = item.src
+        title = item.title
+        price = item.price
+        comp = item.comp
+        color = item.color
+        width = item.width
+        recApp = item.recApp
+        reCare = item.reCare
+        proCode = item.proCode
+        country = item.country
+    })
 
     const history = useHistory()
 
-    console.log(src)
 
+    const [cost, setCost] = useState(price)
     const dispatch = useDispatch()
 
-    const handleCart = (id) => {
-        dispatch(addToCart(id))
+    const handleCart = () => {
+        dispatch({
+            type: shopTypes.ADD_TO_CART,
+            payload: {
+                id: id, title: title, src: src, price: price,
+                comp: comp, color: color, width: width,
+                recApp: recApp, reCare: reCare,
+                proCode: proCode, country: country
+            }
+        })
     }
 
     const handleClick = () => {
@@ -38,22 +64,23 @@ export default function ProductView({ id, title, src, price, comp, color, wide, 
                     <img src={src} alt="" className="product__pic" />
                 </div>
                 <div className="product__details">
-                    <h2>Emanuel Ungaro Floral Brocade</h2>
-                    <p><span>Composition:</span> Silk, Acetate and PL</p>
-                    <p><span>Colour:</span> Daffodil and Ivory</p>
-                    <p><span>Width:</span> 132 cm</p>
-                    <p><span>Recommended Application:</span> Dresses, Jackets, Skirts and Waistcoats</p>
-                    <p><span>Recommended Care:</span> Dry Clean</p>
-                    <p><span>Product Code:</span> 17693</p>
+                    <h2>{title}</h2>
+                    <p><span>Composition:</span>{comp}</p>
+                    <p><span>Colour:</span> {color}</p>
+                    <p><span>Width:</span> {width}</p>
+                    <p><span>Country:</span> {country}</p>
+                    <p><span>Recommended Application:</span> {recApp}</p>
+                    <p><span>Recommended Care:</span> {reCare}</p>
+                    <p><span>Product Code:</span> {proCode}</p>
                     <div>
                         <p><span>Quantity:</span></p>
                         <div className="quantity">
-                            <input onChange={handlePrice} type="text" className="product__qty" placeholder='1' value={price} />
+                            <input onChange={handlePrice} type="text" className="product__qty" placeholder='1' value='' />
                             <p> Price per meter</p>
                         </div>
                         <h2>R {cost}</h2>
                         <div className="product__button">
-                            <button onClick={handleCart} className='shopCart'>Add to Cart</button>
+                            <button onClick={() => handleCart()} className='shopCart'>Add to Cart</button>
                         </div>
                     </div>
                 </div>

@@ -45,7 +45,7 @@ export default function CartPage() {
                             value={getBasketTotal(mapState)}
                             displayType={'text'}
                             thousandSeparator={true}
-                            prefix={'R'}
+                            prefix={'R '}
                         />
                         <button>Proceed to Checkout</button>
                     </div>

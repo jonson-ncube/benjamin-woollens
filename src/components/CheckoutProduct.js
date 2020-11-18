@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { removeFromCart } from '../redux/shopping/shopActions'
 import './CheckoutProduct.css'
 
-export default function CheckoutProduct({ id, title, src, price, comp, color, wide, recApp, reCare, code }) {
+export default function CheckoutProduct({ id, title, src, price }) {
 
     const dispatch = useDispatch()
 
@@ -17,10 +17,10 @@ export default function CheckoutProduct({ id, title, src, price, comp, color, wi
             <div className='checkoutProduct__info'>
                 <p className='checkoutProduct__title'>{title}</p>
                 <p className='checkoutProduct__price'>
-                    <small>R</small>
+                    <small>R </small>
                     <strong>{price}</strong>
                 </p>
-                <button onClick={removeFromBasket}>Remove from Basket</button>
+                <button onClick={() => removeFromBasket(id)}>Remove from Basket</button>
             </div>
         </div>
     )
