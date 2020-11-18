@@ -45,7 +45,7 @@ export default function Home() {
             <div className="boxContainer">
                 <BoxContainer src={brocade} alt='brocade' text='Brocade' />
                 <BoxContainer src={coating} alt='coating' text='Coating' />
-                <BoxContainer src={denim} alt='demin' text='Demin' />
+                <BoxContainer src={denim} alt='demin' text='Denim' />
                 <BoxContainer src={knit} alt='knit' text='Knit' />
                 <BoxContainer src={hiTech} alt='Hi-Tech' text='Hi-Tech' />
             </div>

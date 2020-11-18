@@ -6,7 +6,7 @@ export default function BoxContainer({ src, alt, text }) {
         <div className='box'>
             <img src={src} alt={alt} className="box__pic" />
             <div className="box__sub">
-                <p>Everything</p>
+                <p>ALL THINGS</p>
                 <p>{text}</p>
             </div>
         </div>

@@ -7,6 +7,7 @@ import './Header.css'
 import logo from '../assets/benjwool_logo.jpg'
 import IconButton from '@material-ui/core/IconButton'
 import { useSelector } from 'react-redux';
+import Covid from './Covid';
 
 export default function Header() {
 
@@ -18,44 +19,47 @@ export default function Header() {
     const mapState = useSelector(state => state.shopState.cart)
 
     return (
-        <div className='header'>
-            <Link to='/'>
-                <div className="header">
-                    <img src={logo} className='header__logo' alt='logo' />
-                </div>
-            </Link>
-            <nav className="header__nav">
-                <div className="header__left">
+        <>
+            <Covid />
+            <div className='header'>
+                <Link to='/'>
+                    <div className="header">
+                        <img src={logo} className='header__logo' alt='logo' />
+                    </div>
+                </Link>
+                <nav className="header__nav">
+                    <div className="header__left">
+                        <IconButton>
+                            <FacebookIcon />
+                        </IconButton>
+                        <IconButton>
+                            <InstagramIcon />
+                        </IconButton>
+                    </div>
+                    <ul className="header__buttons" >
+                        <Link style={navStyle} to='/about'>
+                            <li>ABOUT US</li>
+                        </Link>
+                        <Link style={navStyle} to='/fabrics'>
+                            <li>OUR FABRICS</li>
+                        </Link>
+                        <Link style={navStyle} to='/shop'>
+                            <li>SHOP</li>
+                        </Link>
+                        <Link style={navStyle} to="/contact">
+                            <li>CONTACT US</li>
+                        </Link>
+                    </ul>
                     <IconButton>
-                        <FacebookIcon />
+                        <Link to='/checkout'>
+                            <div className="header__right">
+                                <span className="header__icon">{mapState.length}</span>
+                                <ShoppingCartIcon className='shoppingCart' />
+                            </div>
+                        </Link>
                     </IconButton>
-                    <IconButton>
-                        <InstagramIcon />
-                    </IconButton>
-                </div>
-                <ul className="header__buttons" >
-                    <Link style={navStyle} to='/about'>
-                        <li>ABOUT US</li>
-                    </Link>
-                    <Link style={navStyle} to='/fabrics'>
-                        <li>OUR FABRICS</li>
-                    </Link>
-                    <Link style={navStyle} to='/shop'>
-                        <li>SHOP</li>
-                    </Link>
-                    <Link style={navStyle} to="/contact">
-                        <li>CONTACT US</li>
-                    </Link>
-                </ul>
-                <IconButton>
-                    <Link to='/checkout'>
-                        <div className="header__right">
-                            <span className="header__icon">{mapState.length}</span>
-                            <ShoppingCartIcon className='shoppingCart' />
-                        </div>
-                    </Link>
-                </IconButton>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        </>
     )
 }
