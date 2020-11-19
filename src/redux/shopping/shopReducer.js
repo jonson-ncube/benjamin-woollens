@@ -1,5 +1,9 @@
 import shopTypes from './shopTypes'
-import bespokeData from '../../data/bespokeData'
+import {
+    bespokeData, brocadeData, coatingData, cottonData,
+    hitechData, georgetteData, denimData, knitData, linenData,
+    liningData
+} from '../../data/collectionData'
 
 const initialState = {
     product: bespokeData,
