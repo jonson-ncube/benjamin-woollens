@@ -5,7 +5,10 @@ import { useSelector } from 'react-redux'
 
 export default function Bespoke() {
 
+
     const mapState = useSelector(state => state.shopState.product)
+
+    console.log(mapState)
 
     return (
         <>

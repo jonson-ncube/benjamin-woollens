@@ -51,6 +51,7 @@ export default function ProductView({ id, title, src, price, comp, color, width,
 
     const handlePrice = (e) => {
         setCost(e.target.value * price)
+        dispatch()
     }
 
     return (
