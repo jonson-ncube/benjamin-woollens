@@ -8,8 +8,6 @@ export default function Bespoke() {
 
     const mapState = useSelector(state => state.shopState.product)
 
-    console.log(mapState)
-
     return (
         <>
             <div className='bespoke__container'>

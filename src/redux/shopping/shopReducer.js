@@ -17,6 +17,9 @@ export const getBasketTotal = (cart) =>
 
 
 export const shopReducer = (state = initialState, action) => {
+
+    const newCart = state.cart.filter(item => item.id !== action.payload)
+
     switch (action.type) {
         case shopTypes.ADD_TO_CART:
             return {
@@ -25,16 +28,17 @@ export const shopReducer = (state = initialState, action) => {
             }
 
         case shopTypes.REMOVE_FROM_CART:
-            const index = state.cart.findIndex(
-                cartItem => cartItem.id === action.id
-            )
+            // const index = state.cart.findIndex(
+            //     cartItem => cartItem.id === action.id
+            // )
 
-            let newCart = [...state.cart]
-            if (index >= 0) {
-                newCart.splice(index, 1)
-            } else {
-                console.warn(`Can's remove product (id:${action.id}) as its not in basket!`)
-            }
+            // let newCart = [...state.cart]
+            // if (index >= 0) {
+            //     newCart.splice(index, 1)
+            // } else {
+            //     console.warn(`Can's remove product (id:${action.id}) as its not in basket!`)
+            // }
+
             return {
                 ...state, cart: newCart
             }

@@ -2,18 +2,13 @@ import React, { useState } from 'react'
 import './ProductView.css'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { useHistory } from 'react-router-dom'
-import { addToCart, loadProducts } from '../redux/shopping/shopActions'
 import { useDispatch, useSelector } from 'react-redux';
 import shopTypes from '../redux/shopping/shopTypes';
-import amountTypes from '../redux/amount/amountTypes';
 import { updateAmount } from '../redux/amount/amountAction';
 
 export default function ProductView({ id, title, src, price, comp, color, width, country, recApp, reCare, proCode }) {
 
-
     const mapState = useSelector(state => state.shopState.cart)
-
-    // const amount = useSelector(state => state.amountState.amount)
 
     const history = useHistory()
 
@@ -21,11 +16,7 @@ export default function ProductView({ id, title, src, price, comp, color, width,
         history.goBack()
     }
 
-
     const dispatch = useDispatch()
-
-
-    // const { title } = mapState
 
     mapState.map(item => {
         id = item.id
@@ -41,26 +32,16 @@ export default function ProductView({ id, title, src, price, comp, color, width,
         country = item.country
     })
 
-
     const [cost, setCost] = useState(price)
-
-
-
 
     function handlePrice(e) {
         setCost(e.target.value * price)
-
-        console.log('item ID', id)
-
-        console.log('running 1')
     }
 
     const handleCart = () => {
 
-        // console.log('running 2')
-        //console.log('amount', amount)
-        console.log('cost', cost)
         dispatch(updateAmount(cost))
+
         dispatch({
             type: shopTypes.ADD_TO_CART,
             payload: {

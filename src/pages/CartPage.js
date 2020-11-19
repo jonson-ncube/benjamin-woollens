@@ -1,6 +1,5 @@
 import React from 'react'
 import './CartPage.css'
-import { getBasketTotal } from '../redux/shopping/shopReducer'
 import CurrencyFormat from 'react-currency-format'
 import { useSelector } from 'react-redux'
 import CheckoutProduct from '../components/CheckoutProduct'
@@ -10,6 +9,12 @@ export default function CartPage() {
     const mapState = useSelector(state => state.shopState.cart)
 
     const filterState = mapState.filter(item => item.filterValue)
+
+    const totalValue = filterState.reduce((amount, item) => parseFloat(item.price) + parseFloat(amount), 0)
+    console.log('totalValue', totalValue.toFixed(2))
+
+
+    console.log()
 
     return (
         <div className='cart__container'>
@@ -44,7 +49,7 @@ export default function CartPage() {
                                 </>
                             )}
                             decimalScale={2}
-                            value={getBasketTotal(filterState)}
+                            value={totalValue.toFixed(2)}
                             displayType={'text'}
                             thousandSeparator={true}
                             prefix={'R '}
