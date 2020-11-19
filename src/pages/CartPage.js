@@ -12,10 +12,6 @@ export default function CartPage() {
     const filterState = mapState.filter(item => item.filterValue)
 
     const totalValue = filterState.reduce((amount, item) => parseFloat(item.price) + parseFloat(amount), 0)
-    console.log('totalValue', totalValue.toFixed(2))
-
-
-    console.log()
 
     if (filterState.length === 0) {
         return (
@@ -44,6 +40,7 @@ export default function CartPage() {
                                 title={item.title}
                                 src={item.src}
                                 price={item.price}
+                                width={item.width}
                             />
                         ))}
                     </div>

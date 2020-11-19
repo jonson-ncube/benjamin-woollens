@@ -33,7 +33,6 @@ export default function ProductView({ id, title, src, price, comp, color, width,
     })
 
     const [cost, setCost] = useState(price)
-
     function handlePrice(e) {
         setCost(e.target.value * price)
     }

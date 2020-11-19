@@ -1,9 +1,9 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { removeFromCart } from '../redux/shopping/shopActions'
 import './CheckoutProduct.css'
 
-export default function CheckoutProduct({ id, title, src, price }) {
+export default function CheckoutProduct({ id, title, src, price, width }) {
 
     const dispatch = useDispatch()
 
@@ -16,9 +16,11 @@ export default function CheckoutProduct({ id, title, src, price }) {
             <img className='checkoutProduct__image' src={src} alt={title} />
             <div className='checkoutProduct__info'>
                 <p className='checkoutProduct__title'>{title}</p>
+                <p><small><strong>meters</strong> long</small></p>
+                <small><strong>{width} </strong>wide</small>
                 <p className='checkoutProduct__price'>
-                    <small>R </small>
-                    <strong>{parseFloat(price).toFixed(2)}</strong>
+                    <strong>R </strong>
+                    <b>{parseFloat(price).toFixed(2)}</b>
                 </p>
                 <button onClick={() => removeFromBasket(id)}>Remove from Basket</button>
             </div>

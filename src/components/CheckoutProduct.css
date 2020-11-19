@@ -2,10 +2,18 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutProduct>img{
+    /* width: 100%; */
 }
 
 .checkoutProduct__info{
     padding-left: 20px;
+    line-height: 6px;
+    
 }
 
 .checkoutProduct__info > button{
@@ -18,7 +26,7 @@
 }
 
 .checkoutProduct__image{
-    object-fit: contain;
+    object-fit: fill;
     width: 180px;
     height: 180px;
 }

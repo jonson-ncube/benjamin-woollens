@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
+/* @import url("//db.onlinewebfonts.com/c/ff394633ce270d4739498f391b507a4b?family=Aviano"); */
+
 *{
   font-family: 'Playfair Display', serif;
+  /* font-family: "Aviano" */
 }
 
 body {
