@@ -1,9 +1,10 @@
 import amountTypes from '../amount/amountTypes'
 import shopTypes from '../shopping/shopTypes'
 
-export const updateAmount = (amount) => {
+export const updateAmount = (cost) => {
+    console.log('actions amount', cost)
     return {
         type: amountTypes.UPDATE_PRICE,
-        payload: amount
+        payload: cost
     }
 }

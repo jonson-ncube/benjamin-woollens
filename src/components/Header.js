@@ -18,6 +18,9 @@ export default function Header() {
 
     const mapState = useSelector(state => state.shopState.cart)
 
+    const filterState = mapState.filter(item => item.filterValue)
+
+
     return (
         <>
             <Covid />
@@ -53,7 +56,7 @@ export default function Header() {
                     <IconButton>
                         <Link to='/checkout'>
                             <div className="header__right">
-                                <span className="header__icon">{mapState.length}</span>
+                                <span className="header__icon">{filterState.length}</span>
                                 <ShoppingCartIcon className='shoppingCart' />
                             </div>
                         </Link>

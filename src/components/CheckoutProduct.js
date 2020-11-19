@@ -18,7 +18,7 @@ export default function CheckoutProduct({ id, title, src, price }) {
                 <p className='checkoutProduct__title'>{title}</p>
                 <p className='checkoutProduct__price'>
                     <small>R </small>
-                    <strong>{price}</strong>
+                    <strong>{parseFloat(price).toFixed(2)}</strong>
                 </p>
                 <button onClick={() => removeFromBasket(id)}>Remove from Basket</button>
             </div>

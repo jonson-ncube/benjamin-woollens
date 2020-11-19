@@ -4,12 +4,11 @@ const initState = {
     amount: 0
 }
 
-export const shopReducer = (state = initialState, action) => {
+export const amountReducer = (state = initState, action) => {
     switch (action.type) {
-        case shopTypes.ADD_TO_CART:
+        case amountTypes.UPDATE_PRICE:
             return {
-                ...state,
-                cart: [...state.cart, action.payload]
+                amount: action.payload
             }
         default:
             return state

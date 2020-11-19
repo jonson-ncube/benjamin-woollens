@@ -15,7 +15,8 @@ export default function ShopComp({ id, title, src, price, comp, color, country, 
                 id: id, title: title, src: src, price: price,
                 comp: comp, color: color, width: width,
                 recApp: recApp, reCare: reCare,
-                proCode: proCode, country: country
+                proCode: proCode, country: country,
+                filterValue: false
             }
         })
     }

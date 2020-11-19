@@ -5,11 +5,25 @@ import { useHistory } from 'react-router-dom'
 import { addToCart, loadProducts } from '../redux/shopping/shopActions'
 import { useDispatch, useSelector } from 'react-redux';
 import shopTypes from '../redux/shopping/shopTypes';
+import amountTypes from '../redux/amount/amountTypes';
+import { updateAmount } from '../redux/amount/amountAction';
 
 export default function ProductView({ id, title, src, price, comp, color, width, country, recApp, reCare, proCode }) {
 
 
     const mapState = useSelector(state => state.shopState.cart)
+
+    // const amount = useSelector(state => state.amountState.amount)
+
+    const history = useHistory()
+
+    const handleClick = () => {
+        history.goBack()
+    }
+
+
+    const dispatch = useDispatch()
+
 
     // const { title } = mapState
 
@@ -27,31 +41,36 @@ export default function ProductView({ id, title, src, price, comp, color, width,
         country = item.country
     })
 
-    const history = useHistory()
-
 
     const [cost, setCost] = useState(price)
-    const dispatch = useDispatch()
+
+
+
+
+    function handlePrice(e) {
+        setCost(e.target.value * price)
+
+        console.log('item ID', id)
+
+        console.log('running 1')
+    }
 
     const handleCart = () => {
+
+        // console.log('running 2')
+        //console.log('amount', amount)
+        console.log('cost', cost)
+        dispatch(updateAmount(cost))
         dispatch({
             type: shopTypes.ADD_TO_CART,
             payload: {
-                id: id, title: title, src: src, price: price,
+                id: id, title: title, src: src, price: cost,
                 comp: comp, color: color, width: width,
                 recApp: recApp, reCare: reCare,
-                proCode: proCode, country: country
+                proCode: proCode, country: country,
+                filterValue: true
             }
         })
-    }
-
-    const handleClick = () => {
-        history.goBack()
-    }
-
-    const handlePrice = (e) => {
-        setCost(e.target.value * price)
-        dispatch()
     }
 
     return (

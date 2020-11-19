@@ -9,6 +9,8 @@ export default function CartPage() {
 
     const mapState = useSelector(state => state.shopState.cart)
 
+    const filterState = mapState.filter(item => item.filterValue)
+
     return (
         <div className='cart__container'>
             {/* <h1>Your Shopping Cart</h1> */}
@@ -21,7 +23,7 @@ export default function CartPage() {
             <div className="cart__over">
 
                 <div className="cart__cover">
-                    {mapState.map(item => (
+                    {filterState.map(item => (
                         <CheckoutProduct
                             id={item.id}
                             title={item.title}
@@ -37,12 +39,12 @@ export default function CartPage() {
                             renderText={(value) => (
                                 <>
                                     <p>
-                                        subtotal ({mapState.length} items): <strong>{value}</strong>
+                                        subtotal ({filterState.length} items): <strong>{value}</strong>
                                     </p>
                                 </>
                             )}
                             decimalScale={2}
-                            value={getBasketTotal(mapState)}
+                            value={getBasketTotal(filterState)}
                             displayType={'text'}
                             thousandSeparator={true}
                             prefix={'R '}
