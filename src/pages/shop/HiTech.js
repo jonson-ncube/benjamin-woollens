@@ -1,12 +1,11 @@
 import React from 'react'
-
-//store images
-import i1 from '../../assets/store/hitech/1.jpg'
-import i2 from '../../assets/store/hitech/2.jpg'
-import i3 from '../../assets/store/hitech/3.jpg'
+import { useSelector } from 'react-redux'
 import ShopComp from '../../components/ShopComp'
 
 export default function HiTech() {
+
+    const mapState = useSelector(state => state.shopState.hitech)
+
     return (
         <>
             <div className='bespoke__container'>
@@ -17,9 +16,24 @@ export default function HiTech() {
                 </div>
             </div>
             <div className="bespoke__body">
-                <ShopComp src={i1} title='Mock Crocodile Imitation Leather' />
-                <ShopComp src={i2} title='Quilted Embroidered Two-Tone Padded Fabric' />
-                <ShopComp src={i3} title='Reversible Quilted Padded Fabric' />
+                {
+                    mapState.map(item => (
+                        <ShopComp
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            src={item.src}
+                            price={item.price}
+                            comp={item.comp}
+                            color={item.color}
+                            width={item.width}
+                            recApp={item.recApp}
+                            reCare={item.reCare}
+                            proCode={item.proCode}
+                            country={item.country}
+                        />
+                    ))
+                }
             </div>
         </>
     )

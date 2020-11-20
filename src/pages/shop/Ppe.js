@@ -1,24 +1,11 @@
 import React from 'react'
-
-//store images
-import i1 from '../../assets/store/ppe/1.jpg'
-import i2 from '../../assets/store/ppe/2.jpg'
-import i3 from '../../assets/store/ppe/3.jpg'
-import i4 from '../../assets/store/ppe/4.jpg'
-import i5 from '../../assets/store/ppe/5.jpg'
-import i6 from '../../assets/store/ppe/6.jpg'
-import i7 from '../../assets/store/ppe/7.jpg'
-import i8 from '../../assets/store/ppe/8.jpg'
-import i9 from '../../assets/store/ppe/9.jpg'
-import i10 from '../../assets/store/ppe/10.jpg'
-import i11 from '../../assets/store/ppe/11.jpg'
-import i12 from '../../assets/store/ppe/12.jpg'
-import i13 from '../../assets/store/ppe/13.jpg'
-import i14 from '../../assets/store/ppe/14.jpg'
-import i15 from '../../assets/store/ppe/15.jpg'
+import { useSelector } from 'react-redux'
 import ShopComp from '../../components/ShopComp'
 
 export default function Ppe() {
+
+    const mapState = useSelector(state => state.shopState.ppe)
+
     return (
         <>
             <div className='bespoke__container'>
@@ -28,7 +15,24 @@ export default function Ppe() {
                 </div>
             </div>
             <div className="bespoke__body">
-                <ShopComp />
+                {
+                    mapState.map(item => (
+                        <ShopComp
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            src={item.src}
+                            price={item.price}
+                            comp={item.comp}
+                            color={item.color}
+                            width={item.width}
+                            recApp={item.recApp}
+                            reCare={item.reCare}
+                            proCode={item.proCode}
+                            country={item.country}
+                        />
+                    ))
+                }
             </div>
         </>
     )

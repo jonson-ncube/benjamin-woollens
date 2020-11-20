@@ -1,36 +1,11 @@
 import React from 'react'
-
-//store images
-import i1 from '../../assets/store/knit/1.jpg'
-import i2 from '../../assets/store/knit/2.jpg'
-import i3 from '../../assets/store/knit/3.jpg'
-import i4 from '../../assets/store/knit/4.jpg'
-import i5 from '../../assets/store/knit/5.jpg'
-import i6 from '../../assets/store/knit/6.jpg'
-import i7 from '../../assets/store/knit/7.jpg'
-import i8 from '../../assets/store/knit/8.jpg'
-import i9 from '../../assets/store/knit/9.jpg'
-import i10 from '../../assets/store/knit/10.jpg'
-import i11 from '../../assets/store/knit/11.jpg'
-import i12 from '../../assets/store/knit/12.jpg'
-import i13 from '../../assets/store/knit/13.jpg'
-import i14 from '../../assets/store/knit/14.jpg'
-import i15 from '../../assets/store/knit/15.jpg'
-import i16 from '../../assets/store/knit/16.jpg'
-import i17 from '../../assets/store/knit/17.jpg'
-import i18 from '../../assets/store/knit/18.jpg'
-import i19 from '../../assets/store/knit/19.jpg'
-import i20 from '../../assets/store/knit/20.jpg'
-import i21 from '../../assets/store/knit/21.jpg'
-import i22 from '../../assets/store/knit/22.jpg'
-import i23 from '../../assets/store/knit/23.jpg'
-import i24 from '../../assets/store/knit/24.jpg'
-import i25 from '../../assets/store/knit/25.jpg'
-import i26 from '../../assets/store/knit/26.jpg'
-import i27 from '../../assets/store/knit/27.jpg'
+import { useSelector } from 'react-redux'
 import ShopComp from '../../components/ShopComp'
 
 export default function Knit() {
+
+    const mapState = useSelector(state => state.shopState.knit)
+
     return (
         <>
             <div className='bespoke__container'>
@@ -41,7 +16,24 @@ export default function Knit() {
                 </div>
             </div>
             <div className="bespoke__body">
-                <ShopComp />
+                {
+                    mapState.map(item => (
+                        <ShopComp
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            src={item.src}
+                            price={item.price}
+                            comp={item.comp}
+                            color={item.color}
+                            width={item.width}
+                            recApp={item.recApp}
+                            reCare={item.reCare}
+                            proCode={item.proCode}
+                            country={item.country}
+                        />
+                    ))
+                }
             </div>
         </>
     )

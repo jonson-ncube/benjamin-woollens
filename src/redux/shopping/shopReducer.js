@@ -2,11 +2,27 @@ import shopTypes from './shopTypes'
 import {
     bespokeData, brocadeData, coatingData, cottonData,
     hitechData, georgetteData, denimData, knitData, linenData,
-    liningData, shirtingData, silkData
+    liningData, shirtingData, silkData, velvetData, ppeData,
+    tweedData, trimmingData
 } from '../../data/collectionData'
 
 const initialState = {
     product: bespokeData,
+    brocade: brocadeData,
+    coating: coatingData,
+    cotton: cottonData,
+    hitech: hitechData,
+    georgette: georgetteData,
+    denim: denimData,
+    knit: knitData,
+    linen: linenData,
+    lining: liningData,
+    shirting: shirtingData,
+    silk: silkData,
+    velvet: velvetData,
+    ppe: ppeData,
+    tweed: tweedData,
+    trim: trimmingData,
     cart: [],
     load: []
 }

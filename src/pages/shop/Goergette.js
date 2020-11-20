@@ -1,11 +1,11 @@
 import React from 'react'
-
-//store images
-import i1 from '../../assets/store/georgette/1.jpg'
-import i2 from '../../assets/store/georgette/2.jpg'
+import { useSelector } from 'react-redux'
 import ShopComp from '../../components/ShopComp'
 
 export default function Goergette() {
+
+    const mapState = useSelector(state => state.shopState.georgette)
+
     return (
         <>
             <div className='bespoke__container'>
@@ -16,8 +16,24 @@ export default function Goergette() {
                 </div>
             </div>
             <div className="bespoke__body">
-                <ShopComp src={i1} title='Jungle Fever' />
-                <ShopComp src={i2} title='Floral Fantasy' />
+                {
+                    mapState.map(item => (
+                        <ShopComp
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            src={item.src}
+                            price={item.price}
+                            comp={item.comp}
+                            color={item.color}
+                            width={item.width}
+                            recApp={item.recApp}
+                            reCare={item.reCare}
+                            proCode={item.proCode}
+                            country={item.country}
+                        />
+                    ))
+                }
             </div>
         </>
     )

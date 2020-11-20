@@ -1,17 +1,13 @@
 import React from 'react'
 import './Coating.css'
-
-//store images
-import i1 from '../../assets/store/coating/1.jpg'
-import i2 from '../../assets/store/coating/2.jpg'
-import i3 from '../../assets/store/coating/3.jpg'
-import i4 from '../../assets/store/coating/4.jpg'
-import i5 from '../../assets/store/coating/5.jpg'
-import i6 from '../../assets/store/coating/6.jpg'
-import i7 from '../../assets/store/coating/7.jpg'
 import ShopComp from '../../components/ShopComp'
+import { useSelector } from 'react-redux'
+
 
 export default function Coating() {
+
+    const mapState = useSelector(state => state.shopState.coating)
+
     return (
         <>
             <div className='bespoke__container'>
@@ -22,17 +18,24 @@ export default function Coating() {
                 </div>
             </div>
             <div className="bespoke__body">
-                <ShopComp src={i1} title='Carnet Couture Wool Cashmere' />
-                <ShopComp src={i2} title='Wool Rich' />
-                <ShopComp src={i3} title='100% Cashmere' />
-            </div>
-            <div className="bespoke__body">
-                <ShopComp src={i4} title='Loro Piana 100% Wool' />
-                <ShopComp src={i5} title='100% Boiled Wool' />
-                <ShopComp src={i6} title='Virgin Wool and Mohair' />
-            </div>
-            <div className="bespoke__body">
-                <ShopComp src={i7} title='Pink and Pastel Blue Check Wool' />
+                {
+                    mapState.map(item => (
+                        <ShopComp
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            src={item.src}
+                            price={item.price}
+                            comp={item.comp}
+                            color={item.color}
+                            width={item.width}
+                            recApp={item.recApp}
+                            reCare={item.reCare}
+                            proCode={item.proCode}
+                            country={item.country}
+                        />
+                    ))
+                }
             </div>
         </>
     )

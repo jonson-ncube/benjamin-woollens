@@ -1,17 +1,11 @@
 import React from 'react'
-
-import i1 from '../../assets/store/velvet/1.jpg'
-import i2 from '../../assets/store/velvet/2.jpg'
-import i3 from '../../assets/store/velvet/3.jpg'
-import i4 from '../../assets/store/velvet/4.jpg'
-import i5 from '../../assets/store/velvet/5.jpg'
-import i6 from '../../assets/store/velvet/6.jpg'
-import i7 from '../../assets/store/velvet/7.jpg'
-import i8 from '../../assets/store/velvet/8.jpg'
-import i9 from '../../assets/store/velvet/9.jpg'
+import { useSelector } from 'react-redux'
 import ShopComp from '../../components/ShopComp'
 
 export default function Velvet() {
+
+    const mapState = useSelector(state => state.shopState.velvet)
+
     return (
         <>
             <div className='bespoke__container'>
@@ -21,7 +15,24 @@ export default function Velvet() {
                 </div>
             </div>
             <div className="bespoke__body">
-                <ShopComp />
+                {
+                    mapState.map(item => (
+                        <ShopComp
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            src={item.src}
+                            price={item.price}
+                            comp={item.comp}
+                            color={item.color}
+                            width={item.width}
+                            recApp={item.recApp}
+                            reCare={item.reCare}
+                            proCode={item.proCode}
+                            country={item.country}
+                        />
+                    ))
+                }
             </div>
         </>
     )
