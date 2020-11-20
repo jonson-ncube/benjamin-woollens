@@ -36,6 +36,8 @@
 .cart__cover{
     display: flex;
     flex-direction: column;
+    /* border: 1px solid red; */
+    align-items: flex-start;
 }
 
 .checkout__title{

@@ -2,7 +2,7 @@ import shopTypes from './shopTypes'
 import {
     bespokeData, brocadeData, coatingData, cottonData,
     hitechData, georgetteData, denimData, knitData, linenData,
-    liningData
+    liningData, shirtingData, silkData
 } from '../../data/collectionData'
 
 const initialState = {
@@ -28,17 +28,6 @@ export const shopReducer = (state = initialState, action) => {
             }
 
         case shopTypes.REMOVE_FROM_CART:
-            // const index = state.cart.findIndex(
-            //     cartItem => cartItem.id === action.id
-            // )
-
-            // let newCart = [...state.cart]
-            // if (index >= 0) {
-            //     newCart.splice(index, 1)
-            // } else {
-            //     console.warn(`Can's remove product (id:${action.id}) as its not in basket!`)
-            // }
-
             return {
                 ...state, cart: newCart
             }

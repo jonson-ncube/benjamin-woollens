@@ -41,6 +41,7 @@ export default function CartPage() {
                                 src={item.src}
                                 price={item.price}
                                 width={item.width}
+                                comp={item.comp}
                             />
                         ))}
                     </div>

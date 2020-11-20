@@ -8,3 +8,10 @@ export const updateAmount = (cost) => {
         payload: cost
     }
 }
+
+export const meterLength = (meter) => {
+    return {
+        type: amountTypes.METER_LENGTH,
+        payload: meter
+    }
+}

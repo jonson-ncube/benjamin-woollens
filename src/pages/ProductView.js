@@ -4,7 +4,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import shopTypes from '../redux/shopping/shopTypes';
-import { updateAmount } from '../redux/amount/amountAction';
+import { meterLength, updateAmount } from '../redux/amount/amountAction';
 
 export default function ProductView({ id, title, src, price, comp, color, width, country, recApp, reCare, proCode }) {
 
@@ -32,20 +32,26 @@ export default function ProductView({ id, title, src, price, comp, color, width,
         country = item.country
     })
 
+    const [meter, setMeter] = useState(1)
+
     const [cost, setCost] = useState(price)
+
     function handlePrice(e) {
         setCost(e.target.value * price)
+        setMeter(e.target.value)
     }
+
 
     const handleCart = () => {
 
         dispatch(updateAmount(cost))
+        dispatch(meterLength(meter))
 
         dispatch({
             type: shopTypes.ADD_TO_CART,
             payload: {
                 id: id, title: title, src: src, price: cost,
-                comp: comp, color: color, width: width,
+                comp: meter, color: color, width: width,
                 recApp: recApp, reCare: reCare,
                 proCode: proCode, country: country,
                 filterValue: true
@@ -65,15 +71,15 @@ export default function ProductView({ id, title, src, price, comp, color, width,
                 </div>
                 <div className="product__details">
                     <h2>{title}</h2>
-                    <p><span>Composition:</span>{comp}</p>
+                    <p><span>Product Code:</span> {proCode}</p>
+                    <p><span>Composition: </span>{comp}</p>
                     <p><span>Colour:</span> {color}</p>
                     <p><span>Width:</span> {width}</p>
                     <p><span>Country:</span> {country}</p>
                     <p><span>Recommended Application:</span> {recApp}</p>
                     <p><span>Recommended Care:</span> {reCare}</p>
-                    <p><span>Product Code:</span> {proCode}</p>
                     <div>
-                        <p><span>Material Length:</span></p>
+                        {/* <p><span>Material Length:</span></p> */}
                         <div className="quantity">
                             <input onChange={handlePrice} type="text" className="product__qty" placeholder='1' />
                             <p>Number of meters</p>
