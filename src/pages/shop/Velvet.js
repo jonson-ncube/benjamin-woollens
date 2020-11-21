@@ -11,6 +11,7 @@ export default function Velvet() {
             <div className='bespoke__container'>
                 <h2>ALL THINGS VELVET</h2>
                 <div className="bespoke__copy">
+                    <p>The fabric of Royalty. Benjamin Woollens stocks a beautiful range of luxurious cotton-back velvets from Europe.</p>
                     <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
                 </div>
             </div>

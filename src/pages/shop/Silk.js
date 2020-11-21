@@ -11,6 +11,7 @@ export default function Silk() {
             <div className='bespoke__container'>
                 <h2>ALL THINGS SILK</h2>
                 <div className="bespoke__copy">
+                    <p>Silk is the most luxurious of all fabrics. Benjamin Woollens is one of the few stockists of plain and printed 100% silks, imported from Italy and Germany.</p>
                     <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
                 </div>
             </div>

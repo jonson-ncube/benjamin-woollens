@@ -11,6 +11,7 @@ export default function Trimming() {
             <div className='bespoke__container'>
                 <h2>ALL THINGS TRIMMING</h2>
                 <div className="bespoke__copy">
+                    <p>To perfectly complete and compliment your garment, Benjamin Woollens offers a wide range of trimmings, including fusings, canvas, pocketing, fusible felt, zips, threads, buttons, waistbands and shoulder pads.</p>
                     <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
                 </div>
             </div>

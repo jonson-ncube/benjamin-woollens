@@ -1,6 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import ShopComp from '../../components/ShopComp'
+import banner from '../../assets/images/shop_banner_03.jpg'
+import './Ppe.css'
 
 export default function Ppe() {
 
@@ -8,10 +10,12 @@ export default function Ppe() {
 
     return (
         <>
-            <div className='bespoke__container'>
-                <h2>ALL THINGS PPE</h2>
+            <div className='mask__container'>
+                {/* <h2>FACE MASKS</h2> */}
                 <div className="bespoke__copy">
-                    <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
+                    <div className="shop__banner">
+                        <img src={banner} alt="Shop-Banner" className="shop__image" />
+                    </div>
                 </div>
             </div>
             <div className="bespoke__body">

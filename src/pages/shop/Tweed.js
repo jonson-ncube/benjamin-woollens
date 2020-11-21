@@ -11,6 +11,7 @@ export default function Tweed() {
             <div className='bespoke__container'>
                 <h2>ALL THINGS TWEED</h2>
                 <div className="bespoke__copy">
+                    <p>The ideal fabric for a chilly winters day. Benjamin Woollens stocks a wide variety of contemporary and vintage woollen tweeds imported from Europe.</p>
                     <p><strong>Please note prices specified are per meter and exclude VAT</strong></p>
                 </div>
             </div>
