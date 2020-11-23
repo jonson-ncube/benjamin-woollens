@@ -12,6 +12,7 @@
     align-items: center;
     width: 70%;
     flex-direction: column;
+    text-align: center;
 }
 
 .bespoke__body{

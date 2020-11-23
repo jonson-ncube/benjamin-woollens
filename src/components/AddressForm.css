@@ -1,0 +1,44 @@
+.addressFrom__container{
+    display: flex;
+    /* border: 1px solid royalblue; */
+}
+
+.addressForm{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.address__container{
+    /* border: 1px solid royalblue; */
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px
+    /* margin: 10px auto; */
+}
+
+.address__input{
+    height: 30px;
+    margin-bottom: 20px;
+    /* width: 220px; */
+    /* margin: 15 auto; */
+}
+
+.address__button{
+    /* background-color: #f0c14b; */
+    border: 1px solid;
+    /* margin-top: 10px; */
+    height: 30px;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 2px;
+    color: #111111;
+    outline: none;
+}
+
+.radio_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

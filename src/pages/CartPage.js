@@ -1,11 +1,15 @@
 import React from 'react'
 import './CartPage.css'
-import CurrencyFormat from 'react-currency-format'
 import { useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
+import CurrencyFormat from 'react-currency-format'
 import CheckoutProduct from '../components/CheckoutProduct'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
+
 export default function CartPage() {
+
+    const history = useHistory()
 
     const mapState = useSelector(state => state.shopState.cart)
 
@@ -51,10 +55,7 @@ export default function CartPage() {
                             <CurrencyFormat
                                 renderText={(value) => (
                                     <>
-                                        <p>
-                                            subtotal ({filterState.length} items): <strong>{value}</strong>
-                                        </p>
-                                    </>
+                                        <p>subtotal ({filterState.length} items): <strong>{value}</strong></p>                                    </>
                                 )}
                                 decimalScale={2}
                                 value={totalValue.toFixed(2)}
@@ -62,7 +63,7 @@ export default function CartPage() {
                                 thousandSeparator={true}
                                 prefix={'R '}
                             />
-                            <button>Proceed to Checkout</button>
+                            <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
                         </div>
                     </div>
                 </div>

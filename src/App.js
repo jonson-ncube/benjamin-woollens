@@ -11,6 +11,7 @@ import ShopPage from './pages/ShopPage'
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Delivery from './pages/Delivery'
+import Payment from './pages/Payment'
 import FAQ from './pages/FAQ'
 import Returns from './pages/Returns'
 import Press from './pages/Press'
@@ -42,6 +43,7 @@ import Tweed from './pages/shop/Tweed'
 import Velvet from './pages/shop/Velvet'
 
 function App() {
+
   return (
     <Router>
       <div className="App">
@@ -66,6 +68,7 @@ function App() {
           <Route path='/sample' component={FabricSample} />
 
           <Route path='/product/:id' exact component={ProductView} />
+          <Route path='/payment' component={Payment} />
           <Route path='/bespoke' exact component={Bespoke} />
           <Route path='/brocade' exact component={Brocade} />
           <Route path='/coating' exact component={Coating} />

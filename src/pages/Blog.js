@@ -9,7 +9,7 @@ export default function Blog() {
         <div className='blog__container'>
             <div className="blog__hero">
                 <div className="header__things">
-                    <h1 className='all__inside' >INSIDE THE THREAD</h1>
+                    <h1 className='all__inside' >THE INSIDE THREAD</h1>
                     <h3 className='all__inside'>BENJAMIN WOOLLENS BLOG</h3>
                 </div>
                 <img src={blogCover} alt="cover-photo" className="blog__img" />

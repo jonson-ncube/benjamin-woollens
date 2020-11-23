@@ -121,12 +121,6 @@ export default function ShopPage() {
                         </Link>
                     </div>
                     <div className="shop__row">
-                        <Link to='/trimming' style={navStyle}>
-                            <ShopItem
-                                header='ALL THINGS TRIMMING'
-                                src={trimming}
-                            />
-                        </Link>
                         <Link to='/tweed' style={navStyle}>
                             <ShopItem
                                 header='ALL THINGS TWEED'
@@ -137,6 +131,12 @@ export default function ShopPage() {
                             <ShopItem
                                 header='ALL THINGS VELVET'
                                 src={velvet}
+                            />
+                        </Link>
+                        <Link to='/trimming' style={navStyle}>
+                            <ShopItem
+                                header='ALL THINGS TRIMMING'
+                                src={trimming}
                             />
                         </Link>
                         <Link to='/ppe' style={navStyle}>
