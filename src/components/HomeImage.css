@@ -1,0 +1,40 @@
+.home__container{
+    height: 80vh;
+    width: 100%;
+}
+
+.home__hero{
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* object-fit: contain; */
+}
+
+.home__text{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: xx-large;
+    text-shadow: 2.5px 1.5px #000000;
+}
+
+.home__btn{
+    position: absolute;
+    font-weight: 500;
+    font-size: small;
+    margin-top: 90px;
+    padding: 7px 25px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    outline: none;
+    /* text-shadow: 1px 1px #ffffff; */
+    cursor: pointer;
+    
+}
+
+.home__icon{
+    position: absolute;
+}
