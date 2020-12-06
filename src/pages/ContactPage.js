@@ -18,7 +18,7 @@ export default function ContactPage() {
     // const [marker, setMarker] = useState([])
 
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: 'AIzaSyCJ092qJiq6aae0MPDZQgxh9BJDtVw1X_A',
+        googleMapsApiKey: '',
     })
 
     if (loadError) return (
