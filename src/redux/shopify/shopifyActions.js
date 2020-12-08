@@ -2,8 +2,8 @@ import shopifyTypes from './shopifyTypes'
 import Client from 'shopify-buy';
 
 const client = Client.buildClient({
-    domain: 'benjamin-woollens.myshopify.com',
-    storefrontAccessToken: '376eecf28db5113a0f99f4766adecef7'
+    domain: '',
+    storefrontAccessToken: ''
 });
 
 
